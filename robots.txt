@@ -1,0 +1,5 @@
+Sitemap: https://twentworth12.github.io/sitemap.xml
+Sitemap: https://twentworth12.github.io/news-sitemap.xml
+User-agent: *
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php

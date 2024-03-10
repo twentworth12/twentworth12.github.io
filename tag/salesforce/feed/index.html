@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>Salesforce &#8211; Tom Wentworth</title>
+	<atom:link href="https://twentworth12.github.io/tag/salesforce/feed/" rel="self" type="application/rss+xml" />
+	<link>https://twentworth12.github.io/</link>
+	<description>Advice on tech marketing strategy and tactics.</description>
+	<lastBuildDate>Wed, 02 Jan 2019 21:26:39 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+
+<image>
+	<url>https://i0.wp.com/tomwentworth.com/wp-content/uploads/2020/08/cropped-1f4c8-2.png?fit=32%2C32&#038;ssl=1</url>
+	<title>Salesforce &#8211; Tom Wentworth</title>
+	<link>https://twentworth12.github.io/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+<site xmlns="com-wordpress:feed-additions:1">156346229</site>	<item>
+		<title>How to do A/B/N testing in a Pardot Engagement Stream</title>
+		<link>https://twentworth12.github.io/2018/06/29/how-to-do-a-b-n-testing-in-a-pardot-engagement-stream-5a9d61ea4a96/</link>
+		
+		<dc:creator><![CDATA[Tom Wentworth]]></dc:creator>
+		<pubDate>Fri, 29 Jun 2018 14:16:29 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[Salesforce]]></category>
+		<guid isPermaLink="false">https://twentworth12.github.io/2018/06/29/how-to-do-a-b-n-testing-in-a-pardot-engagement-stream/</guid>
+
+					<description><![CDATA[Want to do A/B testing in a Pardot Engagement Stream? You can’t&#160;🙁 Well, not without a little bit of customization. Here’s a simple workaround for doing A/B/N testing in a Pardot engagement stream using a Salesforce APEX trigger. I won’t get into the details of building an APEX trigger, so if you aren’t comfortable with [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Want to do A/B testing in a Pardot Engagement Stream? You can’t&nbsp;<img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f641.png" alt="🙁" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Well, not without a little bit of customization.</p>
+<p>Here’s a simple workaround for doing A/B/N testing in a Pardot engagement stream using a Salesforce APEX trigger.</p>
+<p>I won’t get into the details of building an APEX trigger, so if you aren’t comfortable with adding code to Salesforce, ask your admin nicely for help. But it’s really pretty easy to do. The process looks like this:</p>
+<ol>
+<li>Create a new Lead field in Salesforce. Mine is called <em>abRandom</em>.</li>
+<li>Create an APEX trigger with the code below and deploy it.</li>
+<li>Create a new custom Prospect field in Pardot and sync it with Salesforce</li>
+<li>Add a rule to your Engagement Stream to branch on the random number you’ve generated.</li>
+</ol>
+<p>Here’s the APEX trigger code to generate a number between 1–4 so that I can have up to 4 variations inside an Engagement Stream:</p>
+<pre>trigger assignRandom on Lead (before insert, before update) {
+    for (Lead lead : Trigger.new) {
+        if (lead.Testing__c == NULL) {
+            lead.Testing__c = ( (Math.random() * (4-1) + 1));
+            lead.Testing__c = lead.Testing__c.setscale(0);
+            }
+    }
+}</pre>
+<p><em>Testing__C</em> is the API name for a Salesforce field I created called <em>abRandom</em> (I probably should update that name, eh?).</p>
+<p>This function will look to see if the <em>abRandom</em> field is empty and if it is, it will generate a random number for every Salesforce Lead. You can create a random number in any range by changing the values below i.e. if you wanted a number between 1 and 2 you’d change it to:</p>
+<pre>(Math.random() * (<em>2</em>-1) + <em>1</em>)</pre>
+<p>Once the APEX trigger is deployed, all of your Leads will get be assigned a random number that will be synced to Pardot. Here’s what a Pardot Engagement Stream looks like with A|B branching based on the random number.</p>
+<p>This example will split test two emails.</p>
+<figure class="wp-caption"><img decoding="async" data-image-id="1*-2_-Wk6GEBQNymbPtY9NHA.png" data-width="818" data-height="550" src="https://i0.wp.com/tomwentworth.com/wp-content/uploads/2018/06/c743f-1-2_-Wk6GEBQNymbPtY9NHA.png?ssl=1" data-mce-src="https://i0.wp.com/tomwentworth.com/wp-content/uploads/2018/06/c743f-1-2_-Wk6GEBQNymbPtY9NHA.png?ssl=1" data-recalc-dims="1"><figcaption class="wp-caption-text">Pardot Engagement Stream w/ an A/B&nbsp;test</figcaption></figure>
+<p>That’s it. I hope this helps! Maybe someday Pardot will add support for native A/B testing without workarounds like this&nbsp;<img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">21</post-id>	</item>
+		<item>
+		<title>Before you agree to widening the top of your lead funnel…</title>
+		<link>https://twentworth12.github.io/2016/04/29/before-you-agree-to-widening-the-top-of-your-lead-funnel-c740398014f2/</link>
+		
+		<dc:creator><![CDATA[Tom Wentworth]]></dc:creator>
+		<pubDate>Fri, 29 Apr 2016 16:47:07 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[Demand Generation]]></category>
+		<category><![CDATA[SaaS]]></category>
+		<category><![CDATA[Salesforce]]></category>
+		<guid isPermaLink="false"></guid>
+
+					<description><![CDATA[Few things cause CMOs to panic more than hearing the dreaded phrase “we need to widen the lead funnel” from the head of sales. Or the CEO. Or maybe even the board. What they all really want is more qualified opportunities and ultimately more ARR. Maybe that means widening the funnel. Maybe not. But the [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Few things cause CMOs to panic more than hearing the dreaded phrase “we need to widen the lead funnel” from the head of sales. Or the CEO. Or maybe even the board. What they all really want is more qualified opportunities and ultimately more ARR. Maybe that means widening the funnel. Maybe not. But the solution is much more complex than just delivering “more”. Let’s dig into what can go wrong when you try to widen the funnel.</p>
+<p>Every CMO has a version of this spreadsheet, that starts with an ARR target and spits out a lead, marketing-qualified lead (MQL), and sales-qualified opportunity (SQO) goal using historical funnel conversion metrics. Here’s a simple example using made-up numbers:</p>
+<figure><img decoding="async" data-image-id="1*VWIavrCiNinSFGY-JQsY4g.png" data-width="519" data-height="228" src="https://i0.wp.com/tomwentworth.com/wp-content/uploads/2016/04/fe0c0-1VWIavrCiNinSFGY-JQsY4g.png?ssl=1" data-mce-src="https://i0.wp.com/tomwentworth.com/wp-content/uploads/2016/04/fe0c0-1VWIavrCiNinSFGY-JQsY4g.png?ssl=1" data-recalc-dims="1"></figure>
+<p>In this case, I’ve taken the next quarters ARR goal of $5,000,000, assumed 75% of it comes from marketing, and that we’ll close 33% of the opportunites we create at an average deal size of $25,000. Based on these assumptions, my model spits out a lead target of 5051 and an MQL target of 1515.</p>
+<p>When the next quarter comes along, we do the same exercise. Let’s say we’re shooting for 40% ARR growth, which means we need 40% more leads + MQLs.</p>
+<figure><img decoding="async" data-image-id="1*a3mk8SseIyV6qjcOFTwu7g.png" data-width="517" data-height="223" src="https://i0.wp.com/tomwentworth.com/wp-content/uploads/2016/04/3a2ba-1a3mk8SseIyV6qjcOFTwu7g.png?ssl=1" data-mce-src="https://i0.wp.com/tomwentworth.com/wp-content/uploads/2016/04/3a2ba-1a3mk8SseIyV6qjcOFTwu7g.png?ssl=1" data-recalc-dims="1"></figure>
+<p>Here’s where the problems start happening.</p>
+<p>In the early days of a company most MQLs come through inbound sources, but as the MQL target gets higher CMOs feel pressured to try new tactics to hit the goal. At that often means scaling paid programs that guarantee a certain number of leads based on targeted criteria like company size, role, industry etc. The targeted criteria helps ensure these leads become MQLs as they map to the attributes in your lead scoring process.</p>
+<p>But not all MQLs are created equal. For example, your lead scoring processes probably overweight fit (think job title, industry, company size, etc) and underweight behavior/interest. So while those new paid leads look great in the spreadsheet you received from the vendor, they aren’t going to convert at the same rate as your primarily inbound funnel did in the past. So inside sales converts less of them into opportunities, and as a result probably loosens their qualification criteria to hit their numbers. Here’s how the funnel math looks now with the less qualified MQLs added in, impacting conversion:</p>
+<figure><img decoding="async" data-image-id="1*I43g4xc2DAsX-ILjzbhkXw.png" data-width="453" data-height="227" src="https://i0.wp.com/tomwentworth.com/wp-content/uploads/2016/04/de082-1I43g4xc2DAsX-ILjzbhkXw.png?ssl=1" data-mce-src="https://i0.wp.com/tomwentworth.com/wp-content/uploads/2016/04/de082-1I43g4xc2DAsX-ILjzbhkXw.png?ssl=1" data-recalc-dims="1"></figure>
+<p>When we lower the SQO conversion rate and the win rate just a little bit, the MQL target starts to spiral out of control. Because we’re not as efficient, our MQL target is now 85% higher than the previous quarter. If we play it out one final quarter, assuming we continue to get slightly less efficient, here’s what the targets looks like:</p>
+<figure><img decoding="async" data-image-id="1*eXPPvZBa8IQaNUiMSOggsg.png" data-width="509" data-height="220" src="https://i0.wp.com/tomwentworth.com/wp-content/uploads/2016/04/d8619-1eXPPvZBa8IQaNUiMSOggsg.png?ssl=1" data-mce-src="https://i0.wp.com/tomwentworth.com/wp-content/uploads/2016/04/d8619-1eXPPvZBa8IQaNUiMSOggsg.png?ssl=1" data-recalc-dims="1"></figure>
+<p>In this made up example, over four quarters our ARR target increased by 173% while our MQL target went up by 307%! And we had to pay for all those MQLs — and hire inside sales capacity to process them — driving our CAC way up. Of course I’m making a bunch of assumptions here that won’t hold true for everyone, but the point is that scaling the top of the funnel alone won’t lead to growth nirvana, and could be the entirely wrong thing to do.</p>
+<p>Some companies like HubSpot rely entirely on widening the funnel to grow. This makes sense, as they sell in the massive SMB market and get most of their leads through low-cost inbound sources. But if your company sells into larger enterprises, has a vertical go-to-market, targets a niche persona, etc. you should be more focused on acquiring, converting, and closing the right leads, which might be measured only in tens or hundreds depending on your market.</p>
+<p>Instead of just arbitrarily widening the funnel, what happens if we focus on scaling higher converting lead sources and targeting the right buyers? Magic. We generate higher quality leads, convert more of them, and win bigger deals. Much more efficiently. Going back to our prior example, hitting our Q2 target now only requires 84% more leads vs. 307% in the inefficent model.</p>
+<figure><img decoding="async" data-image-id="1*EnC1M115BZdqEw1f1T7v8g.png" data-width="451" data-height="232" src="https://i0.wp.com/tomwentworth.com/wp-content/uploads/2016/04/6a13f-1EnC1M115BZdqEw1f1T7v8g.png?ssl=1" data-mce-src="https://i0.wp.com/tomwentworth.com/wp-content/uploads/2016/04/6a13f-1EnC1M115BZdqEw1f1T7v8g.png?ssl=1" data-recalc-dims="1"></figure>
+<p>If this sounds like I’m <a href="http://www.insightsquared.com/2016/02/sales-vps-abm/" data-href="http://www.insightsquared.com/2016/02/sales-vps-abm/" target="_blank" rel="noopener" data-mce-href="http://www.insightsquared.com/2016/02/sales-vps-abm/">advocating for account-based marketing</a>, you’re absolutely right. ABM is a great way to reach the prospects who are most likely to buy from you, improving funnel metrics. I also <a href="http://digitalmarketing.captora.com/rs/719-TVA-959/images/Acquia%20Case%20Study.pdf" data-href="http://digitalmarketing.captora.com/rs/719-TVA-959/images/Acquia%20Case%20Study.pdf" target="_blank" rel="noopener" data-mce-href="http://digitalmarketing.captora.com/rs/719-TVA-959/images/Acquia%20Case%20Study.pdf">recommend products like Captora</a> that help you grow the top of the funnel by scaling higher converting channels like organic search.</p>
+<p>The net is that more isn’t always better. Often narrowing the top of the funnel is exactly what it takes to widen what really matters — the “Closed Won” funnel stage.</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">16</post-id>	</item>
+	</channel>
+</rss>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>Microsoft &#8211; Tom Wentworth</title>
+	<atom:link href="https://twentworth12.github.io/tag/microsoft/feed/" rel="self" type="application/rss+xml" />
+	<link>https://twentworth12.github.io/</link>
+	<description>Advice on tech marketing strategy and tactics.</description>
+	<lastBuildDate>Wed, 02 Jan 2019 21:26:19 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+
+<image>
+	<url>https://i0.wp.com/tomwentworth.com/wp-content/uploads/2020/08/cropped-1f4c8-2.png?fit=32%2C32&#038;ssl=1</url>
+	<title>Microsoft &#8211; Tom Wentworth</title>
+	<link>https://twentworth12.github.io/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+<site xmlns="com-wordpress:feed-additions:1">156346229</site>	<item>
+		<title>How to Send Almost Anything to Microsoft Teams using Webhooks and Zapier</title>
+		<link>https://twentworth12.github.io/2016/11/08/how-to-send-anymost-anything-to-microsoft-teams-using-webhooks-and-zapier-24258e08b62f/</link>
+		
+		<dc:creator><![CDATA[Tom Wentworth]]></dc:creator>
+		<pubDate>Tue, 08 Nov 2016 16:43:26 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[Collaboration]]></category>
+		<category><![CDATA[Microsoft]]></category>
+		<category><![CDATA[Slack]]></category>
+		<guid isPermaLink="false"></guid>
+
+					<description><![CDATA[Microsoft Teams is set to take on the new breed of collaboration apps like Slack and Hipchat. Each collaboration area is called a Team — and each Team can have multiple channels. Within a channel you have all the basics like chat (with emojis!) and document sharing, but it really gets interesting when you connect Teams to [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="https://blogs.office.com/2016/11/02/introducing-microsoft-teams-the-chat-based-workspace-in-office-365/" data-href="https://blogs.office.com/2016/11/02/introducing-microsoft-teams-the-chat-based-workspace-in-office-365/" target="_blank" rel="noopener" data-mce-href="https://blogs.office.com/2016/11/02/introducing-microsoft-teams-the-chat-based-workspace-in-office-365/">Microsoft Teams</a> is set to take on the new breed of collaboration apps like Slack and Hipchat.</p>
+<p>Each collaboration area is called a Team — and each Team can have multiple channels. Within a channel you have all the basics like chat (with emojis!) and document sharing, but it really gets interesting when you connect Teams to other applications. Microsoft Teams launched with a bunch of connectors to popular apps like Trello, Jira, Zendesk, and many more — but it’s really easy to integrate almost anything with Teams using <a href="https://zapier.com" data-href="https://zapier.com" target="_blank" rel="noopener" data-mce-href="https://zapier.com">Zapier</a> and Webhooks.</p>
+<p><a href="https://sendgrid.com/blog/whats-webhook/" data-href="https://sendgrid.com/blog/whats-webhook/" target="_blank" rel="noopener" data-mce-href="https://sendgrid.com/blog/whats-webhook/">Webhooks</a> are a type of event-driven API that lets you push and pull information between different types of apps. Lots of popular applications support Webhooks, including both Slack and Microsoft Teams. My objective was to create a channel for my marketing team at <a href="http://rapidminer.com" data-href="http://rapidminer.com" target="_blank" rel="noopener" data-mce-href="http://rapidminer.com">RapidMiner</a> that would let me aggregate customer feedback — the NPS data we capture from <a href="https://www.surveymonkey.com/mp/take-a-tour/" data-href="https://www.surveymonkey.com/mp/take-a-tour/" target="_blank" rel="noopener" data-mce-href="https://www.surveymonkey.com/mp/take-a-tour/">SurveyMonkey</a>.</p>
+<p>The first step is to add a Webhook to your Microsoft Teams channel. You’ll give the channel a name and a custom logo. Then your Webhook will provide a unique URL to receive the information you push from other apps like Zapier:</p>
+<figure><img decoding="async" data-image-id="1*XN3h4_bUZiPlKGMYdLvHkQ.png" data-width="1484" data-height="838" src="https://i0.wp.com/tomwentworth.com/wp-content/uploads/2016/11/fa5ad-1XN3h4_bUZiPlKGMYdLvHkQ.png?ssl=1" data-mce-src="https://i0.wp.com/tomwentworth.com/wp-content/uploads/2016/11/fa5ad-1XN3h4_bUZiPlKGMYdLvHkQ.png?ssl=1" data-recalc-dims="1"></figure>
+<p>Now that you have a URL for your Webhook, you can use Zapier to start pushing information into your Microsoft Teams channel.</p>
+<p>Starting with my SurveyMonkey example, you’ll use the built-in SurveyMonkey Zapier trigger to start the Zapier process.</p>
+<figure><img decoding="async" data-image-id="1*L9n9w0-oJL4-XClS5yamdQ.png" data-width="766" data-height="519" src="https://i0.wp.com/tomwentworth.com/wp-content/uploads/2016/11/43a2d-1L9n9w0-oJL4-XClS5yamdQ.png?ssl=1" data-mce-src="https://i0.wp.com/tomwentworth.com/wp-content/uploads/2016/11/43a2d-1L9n9w0-oJL4-XClS5yamdQ.png?ssl=1" data-recalc-dims="1"></figure>
+<p>Then you’ll use “Webhooks by Zapier” to publish the chat transcript to Microsoft Teams. I prefer to use the <em>Custom Request</em> type for its flexibility. More on that later.</p>
+<figure><img decoding="async" data-image-id="1*whq43AbWGtd5QJfy5JndWA.png" data-width="771" data-height="109" src="https://i0.wp.com/tomwentworth.com/wp-content/uploads/2016/11/ad704-1whq43AbWGtd5QJfy5JndWA.png?ssl=1" data-mce-src="https://i0.wp.com/tomwentworth.com/wp-content/uploads/2016/11/ad704-1whq43AbWGtd5QJfy5JndWA.png?ssl=1" data-recalc-dims="1"></figure>
+<p>Now select the POST method and then add the URL of your Webhook. The Data section is where you’ll configure the messaging what you want to send. Since we selected Custom Request, we need to format the JSON using the Microsoft Teams Card format.</p>
+<p>Here’s what I use:</p>
+<pre>{
+ “summary”:”NPS Survey Response”, 
+ “sections”:[
+ {
+ “activityTitle”:”&lt;b&gt;NPS Survey Response&lt;/b&gt;”,
+ “activityImage”: “<a href="https://secure.surveymonkey.com/assets/userweb/smlib.globaltemplates/5.8.0/assets/sm_logo_fb.png" data-href="https://secure.surveymonkey.com/assets/userweb/smlib.globaltemplates/5.8.0/assets/sm_logo_fb.png" target="_blank" rel="noopener" data-mce-href="https://secure.surveymonkey.com/assets/userweb/smlib.globaltemplates/5.8.0/assets/sm_logo_fb.png">https://secure.surveymonkey.com/assets/userweb/smlib.globaltemplates/5.8.0/assets/sm_logo_fb.png</a>"
+ },
+ {
+ “facts”:[
+ {
+ “name”:”Name”,
+ “value”:”{{configure_this_in_Zapier}}”
+ },
+ {
+ “name”:”Company”,
+ “value”:”{{configure_this_in_Zapier}}”
+ },
+ {
+ “name”:”NPS Score”,
+ “value”:”{{configure_this_in_Zapier}}”
+ },
+ {
+ “name”:”Needed for a Higher Rating”,
+ “value”:”{{configure_this_in_Zapier}}”
+ }
+ ]
+ }
+ ],
+ “potentialAction”:[
+ {
+ “<a href="http://twitter.com/context" data-href="http://twitter.com/context" title="Twitter profile for @context" target="_blank" rel="noopener" data-mce-href="http://twitter.com/context">@context</a>”:”<a href="http://schema.org" data-href="http://schema.org" target="_blank" rel="noopener" data-mce-href="http://schema.org">http://schema.org</a>”,
+ “<a href="http://twitter.com/type" data-href="http://twitter.com/type" title="Twitter profile for @type" target="_blank" rel="noopener" data-mce-href="http://twitter.com/type">@type</a>”:”ViewAction”,
+ “name”:”View in Salesforce”,
+ “target”:[
+ “your_salesforce_url}}”
+ ]
+ },
+ ]
+}</pre>
+<p>This creates a card in Microsoft Teams using your webhook.</p>
+<figure class="wp-caption"><img decoding="async" data-image-id="1*4eXW5FNE47KK7CrvsyuDKw.png" data-width="1638" data-height="652" src="https://i0.wp.com/tomwentworth.com/wp-content/uploads/2016/11/a0914-14eXW5FNE47KK7CrvsyuDKw.png?ssl=1" data-mce-src="https://i0.wp.com/tomwentworth.com/wp-content/uploads/2016/11/a0914-14eXW5FNE47KK7CrvsyuDKw.png?ssl=1" data-recalc-dims="1"><figcaption class="wp-caption-text">Microsoft Teams&nbsp;Card</figcaption></figure>
+<p>These are really simple examples, and you can do much more including <a href="https://dev.outlook.com/Connectors/GetStarted#posting-more-complex-cards" data-href="https://dev.outlook.com/Connectors/GetStarted#posting-more-complex-cards" target="_blank" rel="noopener" data-mce-href="https://dev.outlook.com/Connectors/GetStarted#posting-more-complex-cards">adding markdown formatting and action buttons</a>.</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">25</post-id>	</item>
+	</channel>
+</rss>

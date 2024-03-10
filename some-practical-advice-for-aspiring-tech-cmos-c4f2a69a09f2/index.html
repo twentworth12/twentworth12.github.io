@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="max-image-preview:large">
+<title>Some Practical Advice for Aspiring Tech CMOs – Tom Wentworth</title>
+<link rel="dns-prefetch" href="//secure.gravatar.com">
+<link rel="dns-prefetch" href="//stats.wp.com">
+<link rel="dns-prefetch" href="//widgets.wp.com">
+<link rel="dns-prefetch" href="//jetpack.wordpress.com">
+<link rel="dns-prefetch" href="//s0.wp.com">
+<link rel="dns-prefetch" href="//public-api.wordpress.com">
+<link rel="dns-prefetch" href="//0.gravatar.com">
+<link rel="dns-prefetch" href="//1.gravatar.com">
+<link rel="dns-prefetch" href="//2.gravatar.com">
+<link rel="dns-prefetch" href="//i0.wp.com">
+<link rel="dns-prefetch" href="//c0.wp.com">
+
+
+
+<style id="wp-block-site-logo-inline-css">
+.wp-block-site-logo{box-sizing:border-box;line-height:0}.wp-block-site-logo a{display:inline-block;line-height:0}.wp-block-site-logo.is-default-size img{height:auto;width:120px}.wp-block-site-logo img{height:auto;max-width:100%}.wp-block-site-logo a,.wp-block-site-logo img{border-radius:inherit}.wp-block-site-logo.aligncenter{margin-left:auto;margin-right:auto;text-align:center}.wp-block-site-logo.is-style-rounded{border-radius:9999px}
+</style>
+<style id="wp-block-site-title-inline-css">
+.wp-block-site-title a{color:inherit}
+</style>
+<style id="wp-block-group-inline-css">
+.wp-block-group{box-sizing:border-box}
+:where(.wp-block-group.has-background){padding:1.25em 2.375em}
+</style>
+<style id="wp-block-group-theme-inline-css">
+:where(.wp-block-group.has-background){padding:1.25em 2.375em}
+</style>
+<style id="wp-block-page-list-inline-css">
+.wp-block-navigation .wp-block-page-list{align-items:var(--navigation-layout-align,initial);background-color:inherit;display:flex;flex-direction:var(--navigation-layout-direction,initial);flex-wrap:var(--navigation-layout-wrap,wrap);justify-content:var(--navigation-layout-justify,initial)}.wp-block-navigation .wp-block-navigation-item{background-color:inherit}
+</style>
+<link rel="stylesheet" id="wp-block-navigation-css" href="https://twentworth12.github.io/wp-content/plugins/gutenberg/build/block-library/blocks/navigation/style.css" media="all">
+<style id="wp-block-template-part-theme-inline-css">
+.wp-block-template-part.has-background{margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<style id="wp-block-post-title-inline-css">
+.wp-block-post-title{box-sizing:border-box;word-break:break-word}.wp-block-post-title a{display:inline-block}
+</style>
+<style id="wp-block-post-featured-image-inline-css">
+.wp-block-post-featured-image{margin-left:0;margin-right:0}.wp-block-post-featured-image a{display:block;height:100%}.wp-block-post-featured-image img{box-sizing:border-box;height:auto;max-width:100%;vertical-align:bottom;width:100%}.wp-block-post-featured-image.alignfull img,.wp-block-post-featured-image.alignwide img{width:100%}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim{background-color:#000;inset:0;position:absolute}.wp-block-post-featured-image{position:relative}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-gradient{background-color:initial}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-0{opacity:0}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-10{opacity:.1}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-20{opacity:.2}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-30{opacity:.3}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-40{opacity:.4}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-50{opacity:.5}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-60{opacity:.6}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-70{opacity:.7}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-80{opacity:.8}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-90{opacity:.9}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-100{opacity:1}.wp-block-post-featured-image:where(.alignleft,.alignright){width:100%}
+</style>
+<style id="wp-block-separator-inline-css">
+@charset "UTF-8";.wp-block-separator{border:none;border-top:2px solid}.wp-block-separator.is-style-dots{background:none!important;border:none;height:auto;line-height:1;text-align:center}.wp-block-separator.is-style-dots:before{color:currentColor;content:"···";font-family:serif;font-size:1.5em;letter-spacing:2em;padding-left:2em}
+.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}
+</style>
+<style id="wp-block-separator-theme-inline-css">
+.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}
+</style>
+<style id="wp-block-spacer-inline-css">
+.wp-block-spacer{clear:both}
+</style>
+<style id="wp-block-post-date-inline-css">
+.wp-block-post-date{box-sizing:border-box}
+</style>
+<style id="wp-block-post-author-inline-css">
+.wp-block-post-author{display:flex;flex-wrap:wrap}.wp-block-post-author__byline{font-size:.5em;margin-bottom:0;margin-top:0;width:100%}.wp-block-post-author__avatar{margin-right:1em}.wp-block-post-author__bio{font-size:.7em;margin-bottom:.7em}.wp-block-post-author__content{flex-basis:0;flex-grow:1}.wp-block-post-author__name{margin:0}
+</style>
+<style id="wp-block-post-terms-inline-css">
+.wp-block-post-terms{box-sizing:border-box}.wp-block-post-terms .wp-block-post-terms__separator{white-space:pre-wrap}
+</style>
+<style id="wp-block-buttons-inline-css">
+.wp-block-buttons.is-vertical{flex-direction:column}.wp-block-buttons.is-vertical>.wp-block-button:last-child{margin-bottom:0}.wp-block-buttons>.wp-block-button{display:inline-block;margin:0}.wp-block-buttons.is-content-justification-left{justify-content:flex-start}.wp-block-buttons.is-content-justification-left.is-vertical{align-items:flex-start}.wp-block-buttons.is-content-justification-center{justify-content:center}.wp-block-buttons.is-content-justification-center.is-vertical{align-items:center}.wp-block-buttons.is-content-justification-right{justify-content:flex-end}.wp-block-buttons.is-content-justification-right.is-vertical{align-items:flex-end}.wp-block-buttons.is-content-justification-space-between{justify-content:space-between}.wp-block-buttons.aligncenter{text-align:center}.wp-block-buttons:not(.is-content-justification-space-between,.is-content-justification-right,.is-content-justification-left,.is-content-justification-center) .wp-block-button.aligncenter{margin-left:auto;margin-right:auto;width:100%}.wp-block-buttons[style*=text-decoration] .wp-block-button,.wp-block-buttons[style*=text-decoration] .wp-block-button__link{text-decoration:inherit}.wp-block-buttons.has-custom-font-size .wp-block-button__link{font-size:inherit}.wp-block-button.aligncenter{text-align:center}
+</style>
+<style id="wp-block-button-inline-css">
+.wp-block-button__link{box-sizing:border-box;cursor:pointer;display:inline-block;text-align:center;word-break:break-word}.wp-block-button__link.aligncenter{text-align:center}.wp-block-button__link.alignright{text-align:right}:where(.wp-block-button__link){border-radius:9999px;box-shadow:none;padding:calc(.667em + 2px) calc(1.333em + 2px);text-decoration:none}.wp-block-button[style*=text-decoration] .wp-block-button__link{text-decoration:inherit}.wp-block-buttons>.wp-block-button.has-custom-width{max-width:none}.wp-block-buttons>.wp-block-button.has-custom-width .wp-block-button__link{width:100%}.wp-block-buttons>.wp-block-button.has-custom-font-size .wp-block-button__link{font-size:inherit}.wp-block-buttons>.wp-block-button.wp-block-button__width-25{width:calc(25% - var(--wp--style--block-gap, .5em)*.75)}.wp-block-buttons>.wp-block-button.wp-block-button__width-50{width:calc(50% - var(--wp--style--block-gap, .5em)*.5)}.wp-block-buttons>.wp-block-button.wp-block-button__width-75{width:calc(75% - var(--wp--style--block-gap, .5em)*.25)}.wp-block-buttons>.wp-block-button.wp-block-button__width-100{flex-basis:100%;width:100%}.wp-block-buttons.is-vertical>.wp-block-button.wp-block-button__width-25{width:25%}.wp-block-buttons.is-vertical>.wp-block-button.wp-block-button__width-50{width:50%}.wp-block-buttons.is-vertical>.wp-block-button.wp-block-button__width-75{width:75%}.wp-block-button.is-style-squared,.wp-block-button__link.wp-block-button.is-style-squared{border-radius:0}.wp-block-button.no-border-radius,.wp-block-button__link.no-border-radius{border-radius:0!important}.wp-block-button .wp-block-button__link:where(.is-style-outline),.wp-block-button:where(.is-style-outline)>.wp-block-button__link{border:2px solid;padding:.667em 1.333em}.wp-block-button .wp-block-button__link:where(.is-style-outline):not(.has-text-color),.wp-block-button:where(.is-style-outline)>.wp-block-button__link:not(.has-text-color){color:currentColor}.wp-block-button .wp-block-button__link:where(.is-style-outline):not(.has-background),.wp-block-button:where(.is-style-outline)>.wp-block-button__link:not(.has-background){background-color:initial;background-image:none}.wp-block-button .wp-block-button__link:where(.has-border-color){border-width:initial}.wp-block-button .wp-block-button__link:where([style*=border-top-color]){border-top-width:medium}.wp-block-button .wp-block-button__link:where([style*=border-right-color]){border-right-width:medium}.wp-block-button .wp-block-button__link:where([style*=border-bottom-color]){border-bottom-width:medium}.wp-block-button .wp-block-button__link:where([style*=border-left-color]){border-left-width:medium}.wp-block-button .wp-block-button__link:where([style*=border-style]){border-width:initial}.wp-block-button .wp-block-button__link:where([style*=border-top-style]){border-top-width:medium}.wp-block-button .wp-block-button__link:where([style*=border-right-style]){border-right-width:medium}.wp-block-button .wp-block-button__link:where([style*=border-bottom-style]){border-bottom-width:medium}.wp-block-button .wp-block-button__link:where([style*=border-left-style]){border-left-width:medium}
+</style>
+<style id="wp-block-paragraph-inline-css">
+.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}p.has-background{padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,161;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px;--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{clip:rect(1px,1px,1px,1px);word-wrap:normal!important;border:0;-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.screen-reader-text:focus{clip:auto!important;background-color:#ddd;-webkit-clip-path:none;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+.has-text-align-justify{text-align:justify;}
+</style>
+<style id="wp-block-template-skip-link-inline-css">
+
+		.skip-link.screen-reader-text {
+			border: 0;
+			clip: rect(1px,1px,1px,1px);
+			clip-path: inset(50%);
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			padding: 0;
+			position: absolute !important;
+			width: 1px;
+			word-wrap: normal !important;
+		}
+
+		.skip-link.screen-reader-text:focus {
+			background-color: #eee;
+			clip: auto !important;
+			clip-path: none;
+			color: #444;
+			display: block;
+			font-size: 1em;
+			height: auto;
+			left: 5px;
+			line-height: normal;
+			padding: 15px 23px 14px;
+			text-decoration: none;
+			top: 5px;
+			width: auto;
+			z-index: 100000;
+		}
+</style>
+<style id="global-styles-inline-css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--foreground: #000000;--wp--preset--color--background: #ffffff;--wp--preset--color--primary: #1a4548;--wp--preset--color--secondary: #ffe2c7;--wp--preset--color--tertiary: #F6F6F6;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--gradient--vertical-secondary-to-tertiary: linear-gradient(to bottom,var(--wp--preset--color--secondary) 0%,var(--wp--preset--color--tertiary) 100%);--wp--preset--gradient--vertical-secondary-to-background: linear-gradient(to bottom,var(--wp--preset--color--secondary) 0%,var(--wp--preset--color--background) 100%);--wp--preset--gradient--vertical-tertiary-to-background: linear-gradient(to bottom,var(--wp--preset--color--tertiary) 0%,var(--wp--preset--color--background) 100%);--wp--preset--gradient--diagonal-primary-to-foreground: linear-gradient(to bottom right,var(--wp--preset--color--primary) 0%,var(--wp--preset--color--foreground) 100%);--wp--preset--gradient--diagonal-secondary-to-background: linear-gradient(to bottom right,var(--wp--preset--color--secondary) 50%,var(--wp--preset--color--background) 50%);--wp--preset--gradient--diagonal-background-to-secondary: linear-gradient(to bottom right,var(--wp--preset--color--background) 50%,var(--wp--preset--color--secondary) 50%);--wp--preset--gradient--diagonal-tertiary-to-background: linear-gradient(to bottom right,var(--wp--preset--color--tertiary) 50%,var(--wp--preset--color--background) 50%);--wp--preset--gradient--diagonal-background-to-tertiary: linear-gradient(to bottom right,var(--wp--preset--color--background) 50%,var(--wp--preset--color--tertiary) 50%);--wp--preset--font-size--small: 1rem;--wp--preset--font-size--medium: 1.125rem;--wp--preset--font-size--large: 1.75rem;--wp--preset--font-size--x-large: clamp(1.75rem, 3vw, 2.25rem);--wp--preset--font-family--albert-sans: 'Albert Sans', sans-serif;--wp--preset--font-family--alegreya: Alegreya, serif;--wp--preset--font-family--arvo: Arvo, serif;--wp--preset--font-family--bodoni-moda: 'Bodoni Moda', serif;--wp--preset--font-family--cabin: Cabin, sans-serif;--wp--preset--font-family--chivo: Chivo, sans-serif;--wp--preset--font-family--commissioner: Commissioner, sans-serif;--wp--preset--font-family--cormorant: Cormorant, serif;--wp--preset--font-family--courier-prime: 'Courier Prime', monospace;--wp--preset--font-family--crimson-pro: 'Crimson Pro', serif;--wp--preset--font-family--dm-mono: 'DM Mono', monospace;--wp--preset--font-family--dm-sans: 'DM Sans', sans-serif;--wp--preset--font-family--domine: Domine, serif;--wp--preset--font-family--eb-garamond: 'EB Garamond', serif;--wp--preset--font-family--epilogue: Epilogue, sans-serif;--wp--preset--font-family--figtree: Figtree, sans-serif;--wp--preset--font-family--fira-sans: 'Fira Sans', sans-serif;--wp--preset--font-family--fraunces: Fraunces, serif;--wp--preset--font-family--ibm-plex-mono: 'IBM Plex Mono', monospace;--wp--preset--font-family--ibm-plex-sans: 'IBM Plex Sans', sans-serif;--wp--preset--font-family--inter: Inter, sans-serif;--wp--preset--font-family--josefin-sans: 'Josefin Sans', sans-serif;--wp--preset--font-family--jost: Jost, sans-serif;--wp--preset--font-family--libre-baskerville: 'Libre Baskerville', serif;--wp--preset--font-family--libre-franklin: 'Libre Franklin', sans-serif;--wp--preset--font-family--literata: Literata, serif;--wp--preset--font-family--lora: Lora, serif;--wp--preset--font-family--merriweather: Merriweather, serif;--wp--preset--font-family--montserrat: Montserrat, sans-serif;--wp--preset--font-family--newsreader: Newsreader, serif;--wp--preset--font-family--nunito: Nunito, sans-serif;--wp--preset--font-family--open-sans: 'Open Sans', sans-serif;--wp--preset--font-family--overpass: Overpass, sans-serif;--wp--preset--font-family--petrona: Petrona, serif;--wp--preset--font-family--piazzolla: Piazzolla, serif;--wp--preset--font-family--playfair-display: 'Playfair Display', serif;--wp--preset--font-family--plus-jakarta-sans: 'Plus Jakarta Sans', sans-serif;--wp--preset--font-family--poppins: Poppins, sans-serif;--wp--preset--font-family--raleway: Raleway, sans-serif;--wp--preset--font-family--roboto: Roboto, sans-serif;--wp--preset--font-family--roboto-slab: 'Roboto Slab', serif;--wp--preset--font-family--rubik: Rubik, sans-serif;--wp--preset--font-family--sora: Sora, sans-serif;--wp--preset--font-family--source-sans-3: 'Source Sans 3', sans-serif;--wp--preset--font-family--source-serif-4: 'Source Serif 4', serif;--wp--preset--font-family--space-mono: 'Space Mono', monospace;--wp--preset--font-family--texturina: Texturina, serif;--wp--preset--font-family--work-sans: 'Work Sans', sans-serif;--wp--preset--font-family--system-font: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--wp--preset--font-family--source-serif-pro: "Source Serif Pro", serif;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);--wp--custom--spacing--small: max(1.25rem, 5vw);--wp--custom--spacing--medium: clamp(2rem, 8vw, calc(4 * var(--wp--style--block-gap)));--wp--custom--spacing--large: clamp(4rem, 10vw, 8rem);--wp--custom--spacing--outer: var(--wp--custom--spacing--small, 1.25rem);--wp--custom--typography--font-size--huge: clamp(2.25rem, 4vw, 2.75rem);--wp--custom--typography--font-size--gigantic: clamp(2.75rem, 6vw, 3.25rem);--wp--custom--typography--font-size--colossal: clamp(3.25rem, 8vw, 6.25rem);--wp--custom--typography--line-height--tiny: 1.15;--wp--custom--typography--line-height--small: 1.2;--wp--custom--typography--line-height--medium: 1.4;--wp--custom--typography--line-height--normal: 1.6;}body { margin: 0;--wp--style--global--content-size: 650px;--wp--style--global--wide-size: 1000px; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 1.5rem; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child:first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child:last-child { margin-block-end: 0; }body { --wp--style--block-gap: 1.5rem; }:where(body .is-layout-flow)  > :first-child:first-child{margin-block-start: 0;}:where(body .is-layout-flow)  > :last-child:last-child{margin-block-end: 0;}:where(body .is-layout-flow)  > *{margin-block-start: 1.5rem;margin-block-end: 0;}:where(body .is-layout-constrained)  > :first-child:first-child{margin-block-start: 0;}:where(body .is-layout-constrained)  > :last-child:last-child{margin-block-end: 0;}:where(body .is-layout-constrained)  > *{margin-block-start: 1.5rem;margin-block-end: 0;}:where(body .is-layout-flex) {gap: 1.5rem;}:where(body .is-layout-grid) {gap: 1.5rem;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}body{background-color: var(--wp--preset--color--background);color: var(--wp--preset--color--foreground);font-family: var(--wp--preset--font-family--system-font);font-size: var(--wp--preset--font-size--medium);line-height: var(--wp--custom--typography--line-height--normal);padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){color: var(--wp--preset--color--foreground);text-decoration: underline;}h1{font-family: var(--wp--preset--font-family--source-serif-pro);font-size: var(--wp--custom--typography--font-size--colossal);font-weight: 300;line-height: var(--wp--custom--typography--line-height--tiny);}h2{font-family: var(--wp--preset--font-family--source-serif-pro);font-size: var(--wp--custom--typography--font-size--gigantic);font-weight: 300;line-height: var(--wp--custom--typography--line-height--small);}h3{font-family: var(--wp--preset--font-family--source-serif-pro);font-size: var(--wp--custom--typography--font-size--huge);font-weight: 300;line-height: var(--wp--custom--typography--line-height--tiny);}h4{font-family: var(--wp--preset--font-family--source-serif-pro);font-size: var(--wp--preset--font-size--x-large);font-weight: 300;line-height: var(--wp--custom--typography--line-height--tiny);}h5{font-family: var(--wp--preset--font-family--system-font);font-size: var(--wp--preset--font-size--medium);font-weight: 700;line-height: var(--wp--custom--typography--line-height--normal);text-transform: uppercase;}h6{font-family: var(--wp--preset--font-family--system-font);font-size: var(--wp--preset--font-size--medium);font-weight: 400;line-height: var(--wp--custom--typography--line-height--normal);text-transform: uppercase;}.wp-element-button, .wp-block-button__link{background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-foreground-color{color: var(--wp--preset--color--foreground) !important;}.has-background-color{color: var(--wp--preset--color--background) !important;}.has-primary-color{color: var(--wp--preset--color--primary) !important;}.has-secondary-color{color: var(--wp--preset--color--secondary) !important;}.has-tertiary-color{color: var(--wp--preset--color--tertiary) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-foreground-background-color{background-color: var(--wp--preset--color--foreground) !important;}.has-background-background-color{background-color: var(--wp--preset--color--background) !important;}.has-primary-background-color{background-color: var(--wp--preset--color--primary) !important;}.has-secondary-background-color{background-color: var(--wp--preset--color--secondary) !important;}.has-tertiary-background-color{background-color: var(--wp--preset--color--tertiary) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-foreground-border-color{border-color: var(--wp--preset--color--foreground) !important;}.has-background-border-color{border-color: var(--wp--preset--color--background) !important;}.has-primary-border-color{border-color: var(--wp--preset--color--primary) !important;}.has-secondary-border-color{border-color: var(--wp--preset--color--secondary) !important;}.has-tertiary-border-color{border-color: var(--wp--preset--color--tertiary) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-vertical-secondary-to-tertiary-gradient-background{background: var(--wp--preset--gradient--vertical-secondary-to-tertiary) !important;}.has-vertical-secondary-to-background-gradient-background{background: var(--wp--preset--gradient--vertical-secondary-to-background) !important;}.has-vertical-tertiary-to-background-gradient-background{background: var(--wp--preset--gradient--vertical-tertiary-to-background) !important;}.has-diagonal-primary-to-foreground-gradient-background{background: var(--wp--preset--gradient--diagonal-primary-to-foreground) !important;}.has-diagonal-secondary-to-background-gradient-background{background: var(--wp--preset--gradient--diagonal-secondary-to-background) !important;}.has-diagonal-background-to-secondary-gradient-background{background: var(--wp--preset--gradient--diagonal-background-to-secondary) !important;}.has-diagonal-tertiary-to-background-gradient-background{background: var(--wp--preset--gradient--diagonal-tertiary-to-background) !important;}.has-diagonal-background-to-tertiary-gradient-background{background: var(--wp--preset--gradient--diagonal-background-to-tertiary) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-albert-sans-font-family{font-family: var(--wp--preset--font-family--albert-sans) !important;}.has-alegreya-font-family{font-family: var(--wp--preset--font-family--alegreya) !important;}.has-arvo-font-family{font-family: var(--wp--preset--font-family--arvo) !important;}.has-bodoni-moda-font-family{font-family: var(--wp--preset--font-family--bodoni-moda) !important;}.has-cabin-font-family{font-family: var(--wp--preset--font-family--cabin) !important;}.has-chivo-font-family{font-family: var(--wp--preset--font-family--chivo) !important;}.has-commissioner-font-family{font-family: var(--wp--preset--font-family--commissioner) !important;}.has-cormorant-font-family{font-family: var(--wp--preset--font-family--cormorant) !important;}.has-courier-prime-font-family{font-family: var(--wp--preset--font-family--courier-prime) !important;}.has-crimson-pro-font-family{font-family: var(--wp--preset--font-family--crimson-pro) !important;}.has-dm-mono-font-family{font-family: var(--wp--preset--font-family--dm-mono) !important;}.has-dm-sans-font-family{font-family: var(--wp--preset--font-family--dm-sans) !important;}.has-domine-font-family{font-family: var(--wp--preset--font-family--domine) !important;}.has-eb-garamond-font-family{font-family: var(--wp--preset--font-family--eb-garamond) !important;}.has-epilogue-font-family{font-family: var(--wp--preset--font-family--epilogue) !important;}.has-figtree-font-family{font-family: var(--wp--preset--font-family--figtree) !important;}.has-fira-sans-font-family{font-family: var(--wp--preset--font-family--fira-sans) !important;}.has-fraunces-font-family{font-family: var(--wp--preset--font-family--fraunces) !important;}.has-ibm-plex-mono-font-family{font-family: var(--wp--preset--font-family--ibm-plex-mono) !important;}.has-ibm-plex-sans-font-family{font-family: var(--wp--preset--font-family--ibm-plex-sans) !important;}.has-inter-font-family{font-family: var(--wp--preset--font-family--inter) !important;}.has-josefin-sans-font-family{font-family: var(--wp--preset--font-family--josefin-sans) !important;}.has-jost-font-family{font-family: var(--wp--preset--font-family--jost) !important;}.has-libre-baskerville-font-family{font-family: var(--wp--preset--font-family--libre-baskerville) !important;}.has-libre-franklin-font-family{font-family: var(--wp--preset--font-family--libre-franklin) !important;}.has-literata-font-family{font-family: var(--wp--preset--font-family--literata) !important;}.has-lora-font-family{font-family: var(--wp--preset--font-family--lora) !important;}.has-merriweather-font-family{font-family: var(--wp--preset--font-family--merriweather) !important;}.has-montserrat-font-family{font-family: var(--wp--preset--font-family--montserrat) !important;}.has-newsreader-font-family{font-family: var(--wp--preset--font-family--newsreader) !important;}.has-nunito-font-family{font-family: var(--wp--preset--font-family--nunito) !important;}.has-open-sans-font-family{font-family: var(--wp--preset--font-family--open-sans) !important;}.has-overpass-font-family{font-family: var(--wp--preset--font-family--overpass) !important;}.has-petrona-font-family{font-family: var(--wp--preset--font-family--petrona) !important;}.has-piazzolla-font-family{font-family: var(--wp--preset--font-family--piazzolla) !important;}.has-playfair-display-font-family{font-family: var(--wp--preset--font-family--playfair-display) !important;}.has-plus-jakarta-sans-font-family{font-family: var(--wp--preset--font-family--plus-jakarta-sans) !important;}.has-poppins-font-family{font-family: var(--wp--preset--font-family--poppins) !important;}.has-raleway-font-family{font-family: var(--wp--preset--font-family--raleway) !important;}.has-roboto-font-family{font-family: var(--wp--preset--font-family--roboto) !important;}.has-roboto-slab-font-family{font-family: var(--wp--preset--font-family--roboto-slab) !important;}.has-rubik-font-family{font-family: var(--wp--preset--font-family--rubik) !important;}.has-sora-font-family{font-family: var(--wp--preset--font-family--sora) !important;}.has-source-sans-3-font-family{font-family: var(--wp--preset--font-family--source-sans-3) !important;}.has-source-serif-4-font-family{font-family: var(--wp--preset--font-family--source-serif-4) !important;}.has-space-mono-font-family{font-family: var(--wp--preset--font-family--space-mono) !important;}.has-texturina-font-family{font-family: var(--wp--preset--font-family--texturina) !important;}.has-work-sans-font-family{font-family: var(--wp--preset--font-family--work-sans) !important;}.has-system-font-font-family{font-family: var(--wp--preset--font-family--system-font) !important;}.has-source-serif-pro-font-family{font-family: var(--wp--preset--font-family--source-serif-pro) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+.wp-block-button .wp-block-button__link{background-color: var(--wp--preset--color--primary);border-radius: 0;color: var(--wp--preset--color--background);font-size: var(--wp--preset--font-size--medium);}
+.wp-block-post-title{font-family: var(--wp--preset--font-family--source-serif-pro);font-size: var(--wp--custom--typography--font-size--gigantic);font-weight: 300;line-height: var(--wp--custom--typography--line-height--tiny);}
+.wp-block-site-title{font-family: var(--wp--preset--font-family--system-font);font-size: var(--wp--preset--font-size--medium);font-style: italic;font-weight: normal;line-height: var(--wp--custom--typography--line-height--normal);}
+</style>
+<style id="core-block-supports-inline-css">
+.wp-container-core-navigation-is-layout-1.wp-container-core-navigation-is-layout-1{justify-content:flex-end;}.wp-container-core-group-is-layout-2.wp-container-core-group-is-layout-2{justify-content:space-between;}.wp-container-core-group-is-layout-8.wp-container-core-group-is-layout-8{justify-content:space-between;}
+</style>
+<link rel="stylesheet" id="subscription-modal-css-css" href="https://twentworth12.github.io/wp-content/plugins/jetpack/modules/comments/subscription-modal-on-comment/subscription-modal.css" media="all">
+<link rel="stylesheet" id="twentytwentytwo-style-css" href="https://twentworth12.github.io/wp-content/themes/twentytwentytwo/style.css" media="all">
+<style id="jetpack-global-styles-frontend-style-inline-css">
+:root { --font-headings: unset; --font-base: unset; --font-headings-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; --font-base-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;}
+</style>
+<link rel="stylesheet" id="social-logos-css" href="https://twentworth12.github.io/wp-content/plugins/jetpack/_inc/social-logos/social-logos.min.css" media="all">
+<link rel="stylesheet" id="jetpack_css-css" href="https://twentworth12.github.io/wp-content/plugins/jetpack/css/jetpack.css" media="all">
+
+
+
+
+
+
+<script id="wp-load-polyfill-importmap">
+( HTMLScriptElement.supports && HTMLScriptElement.supports("importmap") ) || document.write( '<script src="https://twentworth12.github.io/wp-content/plugins/gutenberg/build/modules/importmap-polyfill.min.js?ver=1.8.2">' + 'ipt>' );
+</script>
+<script type="importmap" id="wp-importmap">
+{"imports":{"@wordpress\/interactivity":"https:\/\/twentworth12.github.io\/wp-content\/plugins\/gutenberg\/build\/interactivity\/index.min.js?ver=17.8.2"}}
+</script>
+<script type="module" src="https://twentworth12.github.io/wp-content/plugins/gutenberg/build/interactivity/navigation.min.js" id="@wordpress/block-library/navigation-js-module"></script>
+<link rel="modulepreload" href="https://twentworth12.github.io/wp-content/plugins/gutenberg/build/interactivity/index.min.js" id="@wordpress/interactivity-js-modulepreload">	<style>img#wpstats{display:none}</style>
+				<link rel="preload" href="https://twentworth12.github.io/wp-content/themes/twentytwentytwo/assets/fonts/SourceSerif4Variable-Roman.ttf.woff2" as="font" type="font/woff2" crossorigin>
+		<meta name="description" content="In no particular order, here are some of the lessons I’ve learned running marketing at three tech companies. Your most important job is to recruit and retain exceptional people Never forget that people are your most important asset. As a CMO, you’ll be in endless meetings: the weekly leadership meeting, the executive offsite, QBRs, territory…">
+<link rel="amphtml" href="https://twentworth12.github.io/2016/02/18/some-practical-advice-for-aspiring-tech-cmos-c4f2a69a09f2/amp/">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Some Practical Advice for Aspiring Tech CMOs">
+<meta property="og:url" content="https://twentworth12.github.io/2016/02/18/some-practical-advice-for-aspiring-tech-cmos-c4f2a69a09f2/">
+<meta property="og:description" content="In no particular order, here are some of the lessons I’ve learned running marketing at three tech companies. Your most important job is to recruit and retain exceptional people Never forget that pe…">
+<meta property="article:published_time" content="2016-02-18T22:11:23+00:00">
+<meta property="article:modified_time" content="2019-01-02T21:43:19+00:00">
+<meta property="og:site_name" content="Tom Wentworth">
+<meta property="og:image" content="https://i0.wp.com/tomwentworth.com/wp-content/uploads/2016/02/a10ef-1VkA2pFcvuvVRd9fznmQYVw.png?fit=420%2C294&ssl=1">
+<meta property="og:image:width" content="420">
+<meta property="og:image:height" content="294">
+<meta property="og:image:alt" content="">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:text:title" content="Some Practical Advice for Aspiring Tech CMOs">
+<meta name="twitter:image" content="https://i0.wp.com/tomwentworth.com/wp-content/uploads/2016/02/a10ef-1VkA2pFcvuvVRd9fznmQYVw.png?fit=420%2C294&ssl=1&w=640">
+<meta name="twitter:card" content="summary_large_image">
+
+
+<style id="wp-fonts-local">
+@font-face{font-family:"Source Serif Pro";font-style:normal;font-weight:200 900;font-display:fallback;src:url('https://twentworth12.github.io/wp-content/themes/twentytwentytwo/assets/fonts/source-serif-pro/SourceSerif4Variable-Roman.ttf.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:"Source Serif Pro";font-style:italic;font-weight:200 900;font-display:fallback;src:url('https://twentworth12.github.io/wp-content/themes/twentytwentytwo/assets/fonts/source-serif-pro/SourceSerif4Variable-Italic.ttf.woff2') format('woff2');font-stretch:normal;}
+</style>
+<link rel="icon" href="https://i0.wp.com/tomwentworth.com/wp-content/uploads/2020/08/cropped-1f4c8-2.png?fit=32%2C32&ssl=1" sizes="32x32">
+<link rel="icon" href="https://i0.wp.com/tomwentworth.com/wp-content/uploads/2020/08/cropped-1f4c8-2.png?fit=192%2C192&ssl=1" sizes="192x192">
+<link rel="apple-touch-icon" href="https://i0.wp.com/tomwentworth.com/wp-content/uploads/2020/08/cropped-1f4c8-2.png?fit=180%2C180&ssl=1">
+<meta name="msapplication-TileImage" content="https://i0.wp.com/tomwentworth.com/wp-content/uploads/2020/08/cropped-1f4c8-2.png?fit=270%2C270&ssl=1">
+
+</head>
+
+<body class="post-template-default single single-post postid-15 single-format-standard wp-custom-logo wp-embed-responsive">
+
+<div class="wp-site-blocks"><header class="wp-block-template-part">
+<div class="wp-block-group is-layout-constrained wp-block-group-is-layout-constrained">
+<div class="wp-block-group alignwide has-medium-font-size is-content-justification-space-between is-layout-flex wp-container-core-group-is-layout-2 wp-block-group-is-layout-flex" style="padding-top:0px;padding-bottom:60px">
+<div class="wp-block-group is-layout-flex wp-block-group-is-layout-flex"><div class="wp-block-site-logo"><a href="https://twentworth12.github.io/" class="custom-logo-link" rel="home"><img width="64" height="64" src="https://i0.wp.com/tomwentworth.com/wp-content/uploads/2020/08/cropped-1f4c8-1.png?fit=512%2C512&ssl=1" class="custom-logo" alt="Tom Wentworth" decoding="async" srcset="https://i0.wp.com/tomwentworth.com/wp-content/uploads/2020/08/cropped-1f4c8-1.png?w=512&ssl=1 512w,https://i0.wp.com/tomwentworth.com/wp-content/uploads/2020/08/cropped-1f4c8-1.png?resize=300%2C300&ssl=1 300w,https://i0.wp.com/tomwentworth.com/wp-content/uploads/2020/08/cropped-1f4c8-1.png?resize=150%2C150&ssl=1 150w,https://i0.wp.com/tomwentworth.com/wp-content/uploads/2020/08/cropped-1f4c8-1.png?resize=400%2C400&ssl=1 400w,https://i0.wp.com/tomwentworth.com/wp-content/uploads/2020/08/cropped-1f4c8-1.png?resize=200%2C200&ssl=1 200w" sizes="(max-width: 64px) 100vw, 64px" data-attachment-id="393" data-permalink="https://twentworth12.github.io/cropped-1f4c8-1-png/" data-orig-file="https://i0.wp.com/tomwentworth.com/wp-content/uploads/2020/08/cropped-1f4c8-1.png?fit=512%2C512&ssl=1" data-orig-size="512,512" data-comments-opened="1" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="cropped-1f4c8-1.png" data-image-description="<p>https://twentworth12.github.io/wp-content/uploads/2020/08/cropped-1f4c8-1.png</p>
+" data-image-caption="" data-medium-file="https://i0.wp.com/tomwentworth.com/wp-content/uploads/2020/08/cropped-1f4c8-1.png?fit=300%2C300&ssl=1" data-large-file="https://i0.wp.com/tomwentworth.com/wp-content/uploads/2020/08/cropped-1f4c8-1.png?fit=512%2C512&ssl=1"></a></div>
+
+<h1 style="font-style:italic;font-weight:400;" class="wp-block-site-title"><a href="https://twentworth12.github.io" target="_self" rel="home">Tom Wentworth</a></h1></div>
+
+
+<nav class="is-responsive items-justified-right wp-block-navigation is-content-justification-right is-layout-flex wp-container-core-navigation-is-layout-1 wp-block-navigation-is-layout-flex" aria-label="" data-wp-interactive="core/navigation" data-wp-context='{"overlayOpenedBy":[],"type":"overlay","roleAttribute":"","ariaLabel":"Menu"}'><button aria-haspopup="dialog" aria-label="Open menu" class="wp-block-navigation__responsive-container-open " data-wp-on--click="actions.openMenuOnClick" data-wp-on--keydown="actions.handleMenuKeydown"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="7.5" width="16" height="1.5"></rect><rect x="4" y="15" width="16" height="1.5"></rect></svg></button>
+				<div class="wp-block-navigation__responsive-container  " style="" id="modal-2" data-wp-class--has-modal-open="state.isMenuOpen" data-wp-class--is-menu-open="state.isMenuOpen" data-wp-watch="callbacks.initMenu" data-wp-on--keydown="actions.handleMenuKeydown" data-wp-on--focusout="actions.handleMenuFocusout" tabindex="-1">
+					<div class="wp-block-navigation__responsive-close" tabindex="-1">
+						<div class="wp-block-navigation__responsive-dialog" data-wp-bind--aria-modal="state.ariaModal" data-wp-bind--aria-label="state.ariaLabel" data-wp-bind--role="state.roleAttribute">
+							<button aria-label="Close menu" class="wp-block-navigation__responsive-container-close" data-wp-on--click="actions.closeMenuOnClick"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M13 11.8l6.1-6.3-1-1-6.1 6.2-6.1-6.2-1 1 6.1 6.3-6.5 6.7 1 1 6.5-6.6 6.5 6.6 1-1z"></path></svg></button>
+							<div class="wp-block-navigation__responsive-container-content" data-wp-watch="callbacks.focusFirstElement" id="modal-2-content">
+								<ul class="wp-block-navigation__container is-responsive items-justified-right wp-block-navigation"><ul class="wp-block-page-list"><li class="wp-block-pages-list__item wp-block-navigation-item open-on-hover-click"><a class="wp-block-pages-list__item__link wp-block-navigation-item__content" href="https://twentworth12.github.io/about-me/">About Me</a></li><li class="wp-block-pages-list__item wp-block-navigation-item open-on-hover-click"><a class="wp-block-pages-list__item__link wp-block-navigation-item__content" href="https://twentworth12.github.io/scaleup-marketing-podcast/">Scaleup Marketing Podcast</a></li></ul></ul>
+							</div>
+						</div>
+					</div>
+				</div></nav></div>
+</div>
+</header>
+
+
+<main class="wp-block-group is-layout-flow wp-block-group-is-layout-flow">
+<div class="wp-block-group is-layout-constrained wp-block-group-is-layout-constrained"><h1 style="margin-bottom:var(--wp--custom--spacing--medium, 6rem);" class="alignwide wp-block-post-title">Some Practical Advice for Aspiring Tech CMOs</h1>
+
+<figure style="margin-bottom:var(--wp--custom--spacing--medium, 6rem);" class="alignwide wp-block-post-featured-image"><img width="420" height="294" src="https://twentworth12.github.io/wp-content/uploads/2016/02/a10ef-1VkA2pFcvuvVRd9fznmQYVw.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" style="object-fit:cover;" decoding="async" fetchpriority="high" data-attachment-id="35" data-permalink="https://twentworth12.github.io/2016/02/18/some-practical-advice-for-aspiring-tech-cmos-c4f2a69a09f2/a10ef-1vka2pfcvuvvrd9fznmqyvw/" data-orig-file="https://i0.wp.com/tomwentworth.com/wp-content/uploads/2016/02/a10ef-1VkA2pFcvuvVRd9fznmQYVw.png?fit=420%2C294&ssl=1" data-orig-size="420,294" data-comments-opened="1" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="a10ef-1VkA2pFcvuvVRd9fznmQYVw" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/tomwentworth.com/wp-content/uploads/2016/02/a10ef-1VkA2pFcvuvVRd9fznmQYVw.png?fit=300%2C210&ssl=1" data-large-file="https://i0.wp.com/tomwentworth.com/wp-content/uploads/2016/02/a10ef-1VkA2pFcvuvVRd9fznmQYVw.png?fit=420%2C294&ssl=1"></figure>
+
+
+<hr class="wp-block-separator alignwide is-style-wide">
+</div>
+
+
+
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+<div class="entry-content wp-block-post-content is-layout-constrained wp-block-post-content-is-layout-constrained"><p>In no particular order, here are some of the lessons I’ve learned running marketing at three tech companies.</p>
+<h4><strong>Your most important job is to recruit and retain exceptional people</strong></h4>
+<p>Never forget that people are your most important asset. As a CMO, you’ll be in endless meetings: the weekly leadership meeting, the executive offsite, QBRs, territory reviews, weekly pipeline reviews, product strategy sessions. Endless. Meetings.</p>
+<figure><img decoding="async" data-image-id="1*VkA2pFcvuvVRd9fznmQYVw.png" data-width="420" data-height="294" src="https://i0.wp.com/tomwentworth.com/wp-content/uploads/2016/02/a10ef-1VkA2pFcvuvVRd9fznmQYVw.png?ssl=1" data-mce-src="https://i0.wp.com/tomwentworth.com/wp-content/uploads/2016/02/a10ef-1VkA2pFcvuvVRd9fznmQYVw.png?ssl=1" data-recalc-dims="1"></figure>
+<p>Your calendar may be a mess, but you have to still find time to hire and develop your team. Make hiring your top priority, and personally review every candidate as long as you possibly can. Create and enforce a consistent hiring process for every candidate, to minimize the risk of hiring poorly. When I’ve hired poorly, it’s been because I broke process; ignoring obvious warning signs.</p>
+<p>Don’t miss your weekly 1–1s with your direct reports. No excuses (wrote that for myself; I made too many excuses). Just don’t let anyone schedule over this time with your team. Make sure these meetings aren’t just a tactical review of todo items; instead focus them on strategic objectives and career development. If you’ve hired well, your team will insist on this. If you aren’t providing strategic coaching, they will leave and get it elsewhere.</p>
+<h4><strong>Find the right balance between potential, passion, and experience in hiring</strong></h4>
+<p>When I interviewed with Acquia in late 2012, they were one of the <a href="https://www.acquia.com/about-us/newsroom/press-releases/inc-magazine-unveils-31st-annual-list-america-s-fastest-growing" data-href="https://www.acquia.com/about-us/newsroom/press-releases/inc-magazine-unveils-31st-annual-list-america-s-fastest-growing" target="_blank" rel="noopener" data-mce-href="https://www.acquia.com/about-us/newsroom/press-releases/inc-magazine-unveils-31st-annual-list-america-s-fastest-growing">fastest growing tech companies</a> on the planet. So why were they were considering me — and my measly 3 prior years of CMO experience — to run marketing?</p>
+<p>Well, during my interview with <a href="https://www.acquia.com/about-us/leadership" data-href="https://www.acquia.com/about-us/leadership" target="_blank" rel="noopener" data-mce-href="https://www.acquia.com/about-us/leadership">Acquia CEO Tom Erickson</a>, I was introduced to his P2 I3 philosophy — Passion, Potential, Integrity, Initiative, and Intelligence (sorry Tom if I got the order wrong). Tom explained these were more important predictors of success than experience alone (on a whiteboard, no less) and on that basis hired me as CMO of Acquia.</p>
+<p>Experience is often really important, especially in roles like product marketing where domain expertise is beneficial. But don’t hire solely on experience, because experience alone is a poor predictor of success.</p>
+<h4><strong>You won’t know how well aligned sales and marketing are until you miss a quarter</strong></h4>
+<p>Every CMO chases the dream of sales and marketing alignment, but the true test is when you miss a quarter. At some point, you will. It happens to everyone. Then all your hard work and the conviction you had around your funnel in those weekly pipeline meetings is suddenly put into question.</p>
+<figure><img decoding="async" data-image-id="1*7ptZtf3aDrPXQ9EhznG_Zg.png" data-width="160" data-height="160" src="https://i0.wp.com/tomwentworth.com/wp-content/uploads/2016/02/64769-17ptZtf3aDrPXQ9EhznG_Zg.png?ssl=1" data-mce-src="https://i0.wp.com/tomwentworth.com/wp-content/uploads/2016/02/64769-17ptZtf3aDrPXQ9EhznG_Zg.png?ssl=1" data-recalc-dims="1"></figure>
+<p>The reality is that an aligned sales and marketing organization should have known about the miss many months in advance, and already have been working on the mitigation plan for the next quarter. If the miss triggers finger pointing then you probably weren’t as aligned as you thought.</p>
+<p>Start by reviewing a key set of metrics each week that help you assess the health of the entire funnel. Make sure everyone agrees on the metrics, and that you keep them as consistent as possible quarter to quarter so you can learn and adapt from them. And don’t fall into the trap of focusing too much on the top of the funnel just because it’s easier to measure. Often the most difficult challenges (with the greatest potential impact) happen well after a lead has become a qualified opportunity.</p>
+<h4><strong>Messaging is much more important than you think</strong></h4>
+<p>Companies that absolutely nail compelling differentiated messaging crush their competitors. Think HubSpot. Splunk. Slack. New Relic. etc. Messaging is bounded by brainpower and creativity (not budget) so it can truly level the playing field against much bigger competitors when done right.</p>
+<p>But messaging is hard. You’ve got to get buy-in from everyone. You’ve got to validate it with customers and analysts. You have to enable + certify your entire field organization on it. You’ve got to test it via your website, paid search, email, etc. Don’t underestimate how difficult and time consuming that’s going to be. But when done right, a compelling message cuts through the noise and amplifies everything else you’ll want to do.</p>
+<figure><img decoding="async" data-image-id="1*1SjGH3koVtBECuWMQ-DziA.png" data-width="848" data-height="251" src="https://i0.wp.com/tomwentworth.com/wp-content/uploads/2016/02/391e2-11SjGH3koVtBECuWMQ-DziA.png?ssl=1" data-mce-src="https://i0.wp.com/tomwentworth.com/wp-content/uploads/2016/02/391e2-11SjGH3koVtBECuWMQ-DziA.png?ssl=1" data-recalc-dims="1"></figure>
+<h4><strong>Write more, read more.</strong></h4>
+<p>I told friend + former Acquia colleague Jess Iandiorio in her annual review that she was the best product marketer in Boston that no one had heard of — and that needed to change. So Jess <a href="http://www.leanproductmarketer.com" data-href="http://www.leanproductmarketer.com" target="_blank" rel="noopener" data-mce-href="http://www.leanproductmarketer.com">started blogging</a>, which ultimately led to her getting connected with the excellent team at <a href="http://www.drift.com" data-href="http://www.drift.com" target="_blank" rel="noopener" data-mce-href="http://www.drift.com">Drift</a> where she now runs marketing. Through writing, Jess raised her visibility as one of Boston’s smartest marketers but more importantly, said writing gave her a tremendous confidence boost. So create an account on Medium like I’m doing right now, and get writing.</p>
+<p>Of course you should read more too. I’m about to get into the latest from Aaron Ross and Jason Lemkin <a href="http://www.amazon.com/gp/product/B01AXTFMSW/ref=dp-kindle-redirect?ie=UTF8&btkr=1" data-href="http://www.amazon.com/gp/product/B01AXTFMSW/ref=dp-kindle-redirect?ie=UTF8&btkr=1" target="_blank" rel="noopener" data-mce-href="http://www.amazon.com/gp/product/B01AXTFMSW/ref=dp-kindle-redirect?ie=UTF8&btkr=1">From Impossible To Inevitable: How Hyper-Growth Companies Create Predictable Revenue</a>. Most of my actionable reading comes from Flipboard, where I’ve spent a bunch of time following publishers, people, and topics so my stream has become highly relevant to me. It’s a time investment worth making, and Flipboard is usually the first and last thing I look at every day.</p>
+<h4><strong>Don’t immediately propose a rebrand when you start at a new company</strong></h4>
+<p>Updating the logo and/or redesigning the website might feel like a quick, highly visible win, but in the end you’ll be much better off focusing on the hard work of sales + marketing alignment, creating remarkable content, differentiated messaging, etc.</p>
+<p>There are exceptions: For example, Jess Iandiorio just led Drift through a rebrand from Driftt. That was smart, because I just had to Google whether it was Drift with two t’s or two f’s. But unless there’s a well thought out compelling business reason for a rebrand, don’t do it. Or risk <a href="http://www.psfk.com/2016/02/uber-design-alternatives-for-criticized-rebrand.html" data-href="http://www.psfk.com/2016/02/uber-design-alternatives-for-criticized-rebrand.html" target="_blank" rel="noopener" data-mce-href="http://www.psfk.com/2016/02/uber-design-alternatives-for-criticized-rebrand.html">suffering the same fate as Uber</a>.</p>
+<figure><img decoding="async" data-image-id="1*gad0QWi8rS58nG1cL2PuJA.png" data-width="640" data-height="214" src="https://i0.wp.com/tomwentworth.com/wp-content/uploads/2016/02/eef2d-1gad0QWi8rS58nG1cL2PuJA.png?ssl=1" data-mce-src="https://i0.wp.com/tomwentworth.com/wp-content/uploads/2016/02/eef2d-1gad0QWi8rS58nG1cL2PuJA.png?ssl=1" data-recalc-dims="1"></figure>
+<h4><strong>Don’t chase shiny new #martec toys</strong></h4>
+<p>BDRs pitch me on all sorts of new products every day. Most of the pitches are pretty forgettable, like this “breakup” email I just received:</p>
+<figure class="wp-caption"><img decoding="async" data-image-id="1*xLf3fZzUj1h9qDE6xprJIw.png" data-width="315" data-height="258" src="https://i0.wp.com/tomwentworth.com/wp-content/uploads/2016/02/a484b-1xLf3fZzUj1h9qDE6xprJIw.png?ssl=1" data-mce-src="https://i0.wp.com/tomwentworth.com/wp-content/uploads/2016/02/a484b-1xLf3fZzUj1h9qDE6xprJIw.png?ssl=1" data-recalc-dims="1"><figcaption class="wp-caption-text">Please stop it w/ the meme-laden breakup emails, they were cute for 15 minutes</figcaption></figure>
+<p>The best way to pitch me is with FOMO, making me feel out of the loop for being the only CMO not using the latest and greatest marketing tech. Give me a slick demo and a spreadsheet that promises massive growth and ROI and I’m sold!</p>
+<figure class="wp-caption"><img decoding="async" data-image-id="1*urU5K786h5IvUyLcsq1bSg.jpeg" data-width="600" data-height="582" src="https://i0.wp.com/tomwentworth.com/wp-content/uploads/2016/02/73055-1urU5K786h5IvUyLcsq1bSg.jpeg?ssl=1" data-mce-src="https://i0.wp.com/tomwentworth.com/wp-content/uploads/2016/02/73055-1urU5K786h5IvUyLcsq1bSg.jpeg?ssl=1" data-recalc-dims="1"><figcaption class="wp-caption-text">Credit: <a href="http://chiefmartec.com/2016/02/valentines-day-ode-marketing-tech-entrepreneurs/" data-href="http://chiefmartec.com/2016/02/valentines-day-ode-marketing-tech-entrepreneurs/" target="_blank" rel="noopener" data-mce-href="http://chiefmartec.com/2016/02/valentines-day-ode-marketing-tech-entrepreneurs/">http://chiefmartec.com/2016/02/valentines-day-ode-marketing-tech-entrepreneurs/</a></figcaption></figure>
+<p>Turning that spreadsheet into reality takes a lot more than any product alone can deliver. SaaS makes it easy and cost effective to deploy new products, but SaaS doesn’t account for the resources and organizational commitment you’ll need to make them successful. Where I’ve been able to align the organization with the technology, it’s worked great (for example, <a href="https://blog.captora.com/3-highlights-from-revenue-roundtable-boston/" data-href="https://blog.captora.com/3-highlights-from-revenue-roundtable-boston/" target="_blank" rel="noopener" data-mce-href="https://blog.captora.com/3-highlights-from-revenue-roundtable-boston/">Acquia’s work with Captora</a>). Where technology has failed, it’s not because I picked the wrong product; it’s because I didn’t commit the right resources.</p>
+<p>In the end, remember that just because Box, Slack, Zendesk, or whoever is adopting that fancy du-jour SaaS product doesn’t mean that your team is ready for it.</p>
+<h4><strong>Operate on a monthly marketing plan</strong></h4>
+<p>Starting in early October, you’ll be asked to start thinking about your plan for the next year. Sales will ask how you are going to help them hit their pipeline + ARR targets for the upcoming year. Finance will ask you for a budget plan. Your head of products will want to understand your demand generation strategy.</p>
+<p>You absolutely need a strategy for the upcoming year. You’ll need to plan ahead for events like product launches, conferences, big campaigns, etc. But don’t pretend that you have any idea on the specific tactics you are going to employ outside of the next few months.</p>
+<p>I’d suggest running a simplified agile process, defining “epics” to represent your 3–5 objectives for the year (hopefully these won’t change, but they might). Then define a three month plan each month, but treat everything beyond the upcoming month as backlog. Then run monthly sprints, including a retrospective to review prior results, and creation of a plan for the next sprint.</p>
+<p>This way you’ll have a rolling view of the next few months, with the flexibility to quickly adjust strategies and tactics as needed.</p>
+<h4><strong>Say no more often</strong></h4>
+<p>It’s far too easy for marketing to become relegated to service bureau status or worse, <a href="http://chiefmartec.com/2012/11/moving-marketing-beyond-the-arts-and-crafts-department-interview/" data-href="http://chiefmartec.com/2012/11/moving-marketing-beyond-the-arts-and-crafts-department-interview/" target="_blank" rel="noopener" data-mce-href="http://chiefmartec.com/2012/11/moving-marketing-beyond-the-arts-and-crafts-department-interview/">the arts and crafts departmen</a>t. We often get asked to do stuff that has little to with our real mission to accelerate growth. Carefully consider the impact of saying yes to requests that don’t align with your strategic initiatives, no matter how hard sales argues for that one-off campaign, or the CEO demands that you update that one page on the website that no one visits (note: both of these examples are fictional, they would *never* happen!)</p>
+<p>Saying no comes down to having a clear list of priorities. It’s much easier to say no to anyone if you can easily help them understand the associated opportunity cost. This is where running an agile-like marketing process works, because you can capture these requests in a backlog and constantly revisit priorities every month.</p>
+<h4><strong>Your budgeting process is probably broken</strong></h4>
+<p>Finance desperately wants CMOs to build a budget solely based on an Excel model that starts with revenue targets and spits out a marketing programs budget based on conversion rates, ASP, CPL, product mix goals, etc.</p>
+<p>You should absolutely build that model for finance, but don’t trust it completely, and certainly revisit your assumptions often. The model won’t account for so many things — product improvements, a successful PR campaign, fundraising, changes in your deal qualification processes, sales restructuring, and so on.</p>
+<p>The truth is that budgeting is mostly science, part art; and it gets easier with experience.</p>
+<h4><strong>Listen to your board, but trust your own experience</strong></h4>
+<p>Board members are an invaluable asset. They have exposure to other high performing companies, and often have direct experience building and scaling companies.</p>
+<p>When <a href="https://www.acquia.com/about-us/newsroom/press-releases/acquia-completes-50-million-financing-round-may-27-2014" data-href="https://www.acquia.com/about-us/newsroom/press-releases/acquia-completes-50-million-financing-round-may-27-2014" target="_blank" rel="noopener" data-mce-href="https://www.acquia.com/about-us/newsroom/press-releases/acquia-completes-50-million-financing-round-may-27-2014">NEA invested in Acquia</a>, they encouraged us to simplify our complex multi-product strategy into a single offering that became the Acquia Platform. NEA portfolio company Mulesoft had successfully gone through a similar transformation. This was a brilliant idea, and led to Acquia getting into much bigger deals than before.</p>
+<p>But your board doesn’t know your business as well as you do. They will provide many great suggestions, but what worked at one of their portfolio companies may or may not work well for you. Listen carefully, but always remember the board is there to advise, not dictate.</p>
+<h4><strong>It’s okay to feel like you are in over your head</strong></h4>
+<p>It happens to all of us. Eat better. Get some exercise. Obsessively watch house-flipping shows and go to bed every night at 9pm (wait, is that me?).</p>
+<figure><img decoding="async" data-image-id="1*Mqf2b92G417qMGqedBZcIQ.jpeg" data-width="960" data-height="540" src="https://i0.wp.com/tomwentworth.com/wp-content/uploads/2016/02/c1fcf-1Mqf2b92G417qMGqedBZcIQ.jpeg?ssl=1" data-mce-src="https://i0.wp.com/tomwentworth.com/wp-content/uploads/2016/02/c1fcf-1Mqf2b92G417qMGqedBZcIQ.jpeg?ssl=1" data-recalc-dims="1"></figure>
+<p>Whatever helps you de-stress.</p>
+<h4><strong>Seek advice from others</strong></h4>
+<p>I’ve been lucky enough to spend some time with Boston CMO royalty — like <a href="http://www.mikevolpe.com" data-href="http://www.mikevolpe.com" target="_blank" rel="noopener" data-mce-href="http://www.mikevolpe.com">Mike Volpe</a>, <a href="https://www.linkedin.com/in/caroljmeyers" data-href="https://www.linkedin.com/in/caroljmeyers" target="_blank" rel="noopener" data-mce-href="https://www.linkedin.com/in/caroljmeyers">Carol Myers</a>, and <a href="https://twitter.com/bkardon" data-href="https://twitter.com/bkardon" target="_blank" rel="noopener" data-mce-href="https://twitter.com/bkardon">Brian Kardon</a> — and I’ve learned something actionable from all of them. You’ll be surprised at how willing people are to help if you ask nicely (and are patient).</p>
+<p>And when you ascend to CMO, please pay it forward to the next generation.</p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow noopener noreferrer" data-shared="sharing-twitter-15" class="share-twitter sd-button share-icon" href="https://twentworth12.github.io/2016/02/18/some-practical-advice-for-aspiring-tech-cmos-c4f2a69a09f2/" target="_blank" title="Click to share on Twitter"><span>Twitter</span></a></li><li class="share-facebook"><a rel="nofollow noopener noreferrer" data-shared="sharing-facebook-15" class="share-facebook sd-button share-icon" href="https://twentworth12.github.io/2016/02/18/some-practical-advice-for-aspiring-tech-cmos-c4f2a69a09f2/" target="_blank" title="Click to share on Facebook"><span>Facebook</span></a></li><li class="share-print"><a rel="nofollow noopener noreferrer" data-shared="" class="share-print sd-button share-icon" href="https://twentworth12.github.io/2016/02/18/some-practical-advice-for-aspiring-tech-cmos-c4f2a69a09f2/#print" target="_blank" title="Click to print"><span>Print</span></a></li><li class="share-linkedin"><a rel="nofollow noopener noreferrer" data-shared="sharing-linkedin-15" class="share-linkedin sd-button share-icon" href="https://twentworth12.github.io/2016/02/18/some-practical-advice-for-aspiring-tech-cmos-c4f2a69a09f2/" target="_blank" title="Click to share on LinkedIn"><span>LinkedIn</span></a></li><li class="share-end"></ul></div></div></div><div class="sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded" id="like-post-wrapper-156346229-15-65edc552d4fc4" data-src="https://widgets.wp.com/likes/?ver=13.2-beta#blog_id=156346229&post_id=15&origin=tomwentworth.com&obj_id=156346229-15-65edc552d4fc4&n=1" data-name="like-post-frame-156346229-15-65edc552d4fc4" data-title="Like or Reblog"><h3 class="sd-title">Like this:</h3><div class="likes-widget-placeholder post-likes-widget-placeholder" style="height: 55px;"><span class="button"><span>Like</span></span> <span class="loading">Loading…</span></div><span class="sd-text-color"></span><a class="sd-link-color"></a></div></div>
+
+
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-block-group is-layout-constrained wp-block-group-is-layout-constrained">
+<div class="wp-block-group is-layout-flex wp-block-group-is-layout-flex"><div style="font-style:italic;font-weight:400;" class="wp-block-post-date has-small-font-size"><time datetime="2016-02-18T22:11:23-05:00">February 18, 2016</time></div>
+
+<div class="wp-block-post-author has-small-font-size"><div class="wp-block-post-author__content"><p class="wp-block-post-author__name">Tom Wentworth</p></div></div>
+
+<div class="taxonomy-category wp-block-post-terms has-small-font-size"><a href="https://twentworth12.github.io/category/uncategorized/" rel="tag">Uncategorized</a></div>
+
+<div class="taxonomy-post_tag wp-block-post-terms has-small-font-size"><a href="https://twentworth12.github.io/tag/cmo/" rel="tag">CMO</a><span class="wp-block-post-terms__separator">, </span><a href="https://twentworth12.github.io/tag/entrepreneurship/" rel="tag">Entrepreneurship</a><span class="wp-block-post-terms__separator">, </span><a href="https://twentworth12.github.io/tag/saas/" rel="tag">SaaS</a></div></div>
+
+
+
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<hr class="wp-block-separator is-style-wide">
+
+
+<div class="wp-block-post-comments">
+
+
+
+			
+
+	
+
+		<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">Leave a Reply<small><a rel="nofollow" id="cancel-comment-reply-link" href="/2016/02/18/some-practical-advice-for-aspiring-tech-cmos-c4f2a69a09f2/#respond" style="display:none;">Cancel reply</a></small></h3>			<form id="commentform" class="comment-form">
+				<iframe title="Comment Form" src="https://jetpack.wordpress.com/jetpack-comment/?blogid=156346229&postid=15&comment_registration=0&require_name_email=1&stc_enabled=1&stb_enabled=1&show_avatars=1&avatar_default=identicon&greeting=Leave+a+Reply&jetpack_comments_nonce=c7ebce4523&greeting_reply=Leave+a+Reply+to+%25s&color_scheme=light&lang=en_US&jetpack_version=13.2-beta&show_cookie_consent=10&has_cookie_consent=0&is_current_user_subscribed=0&token_key=%3Bnormal%3B&sig=0c1464e0652b8e45426de8af2fb91ee795ccde21#parent=https%3A%2F%2Ftomwentworth.com%2F2016%2F02%2F18%2Fsome-practical-advice-for-aspiring-tech-cmos-c4f2a69a09f2%2F" name="jetpack_remote_comment" style="width:100%; height: 430px; border:0;" class="jetpack_remote_comment" id="jetpack_remote_comment" sandbox="allow-same-origin allow-top-navigation allow-scripts allow-forms allow-popups">
+									</iframe>
+									
+					<script>
+						document.addEventListener('DOMContentLoaded', function () {
+							var commentForms = document.getElementsByClassName('jetpack_remote_comment');
+							for (var i = 0; i < commentForms.length; i++) {
+								commentForms[i].allowTransparency = false;
+								commentForms[i].scrolling = 'no';
+							}
+						});
+					</script>
+					
+							</form>
+		</div>
+
+		
+		<input type="hidden" name="comment_parent" id="comment_parent" value="">
+
+		</div></div>
+</main>
+
+
+<footer class="wp-block-template-part">
+<div class="wp-block-group is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--custom--spacing--large, 8rem)">
+
+					<div class="wp-block-group alignfull is-layout-constrained wp-block-group-is-layout-constrained">
+					<div class="wp-block-group alignwide is-content-justification-space-between is-layout-flex wp-container-core-group-is-layout-8 wp-block-group-is-layout-flex" style="padding-top:4rem;padding-bottom:4rem"><p class="wp-block-site-title"><a href="https://twentworth12.github.io" target="_self" rel="home">Tom Wentworth</a></p>
+
+					
+					<p class="has-text-align-right"><a href="https://wordpress.com/?ref=footer_custom_powered">Powered by WordPress.com</a>.</p>
+					</div>
+					</div>
+					
+</div>
+
+</footer>
+</div>
+
+<style>
+			.sd-social-icon .sd-content ul li a.sd-button>span {
+				margin-left: 0;
+			}
+		</style><script defer id="bilmur" data-provider="wordpress.com" data-service="atomic" src="https://s0.wp.com/wp-content/js/bilmur.min.js?m=202410"></script>
+					<div class="jetpack-subscription-modal">
+						<div class="jetpack-subscription-modal__modal-content">
+								
+	<div class="wp-block-group has-border-color jetpack-subscription-modal__modal-content-form is-layout-flow wp-block-group-is-layout-flow" style="border-color:#dddddd;border-width:1px;margin-top:0;margin-bottom:0;padding:32px">
+
+		
+		<h2 class="wp-block-heading has-text-align-center" style="margin-top:4px;margin-bottom:10px;font-size:26px;font-style:normal;font-weight:600">Discover more from Tom Wentworth</h2>
+		
+
+		
+		<p class="has-text-align-center" style="margin-top:4px;margin-bottom:0px;font-size:15px">Subscribe now to keep reading and get access to the full archive.</p>
+		
+
+			<div class="wp-block-jetpack-subscriptions__supports-newline is-style-compact wp-block-jetpack-subscriptions">
+		<div class="wp-block-jetpack-subscriptions__container is-not-subscriber">
+			<form action="https://wordpress.com/email-subscriptions" method="post" accept-charset="utf-8" data-blog="156346229" data-post_access_level="everybody" data-subscriber_email="" id="subscribe-blog">
+				<div class="wp-block-jetpack-subscriptions__form-elements">
+										<p id="subscribe-email">
+						<label id="subscribe-field-label" for="subscribe-field" class="screen-reader-text">
+							Type your email…						</label>
+						<input required="required" type="email" name="email" style="font-size: 16px;padding: 15px 23px 15px 23px;border-radius: 50px;border-width: 1px;" placeholder="Type your email…" value="" id="subscribe-field">					</p>
+										<p id="subscribe-submit">
+						<input type="hidden" name="action" value="subscribe">
+						<input type="hidden" name="blog_id" value="156346229">
+						<input type="hidden" name="source" value="https://twentworth12.github.io/2016/02/18/some-practical-advice-for-aspiring-tech-cmos-c4f2a69a09f2/">
+						<input type="hidden" name="sub-type" value="subscribe-block">
+						<input type="hidden" name="app_source" value="atomic-subscription-modal-lo">
+						<input type="hidden" name="redirect_fragment" value="subscribe-blog">
+						<input type="hidden" name="lang" value="en_US">
+						<input type="hidden" id="_wpnonce" name="_wpnonce" value="6c8ae3ac8f"><input type="hidden" name="_wp_http_referer" value="/2016/02/18/some-practical-advice-for-aspiring-tech-cmos-c4f2a69a09f2/"><input type="hidden" name="post_id" value="15">						<button type="submit" class="wp-block-button__link" style="font-size: 16px;padding: 15px 23px 15px 23px;margin: 0px; margin-left: 10px;border-radius: 50px;border-width: 1px;" name="jetpack_subscriptions_widget">
+							Subscribe						</button>
+					</p>
+				</div>
+			</form>
+					</div>
+	</div>
+	
+
+		
+		<p class="has-text-align-center jetpack-subscription-modal__close" style="margin-top:20px;font-size:14px"><a href="#">Continue reading</a></p>
+		
+	</div>
+							</div>
+					</div>
+				<div style="display:none">
+			<div class="grofile-hash-map-66c7f8d9ca23871af478ee3be2e906ec">
+		</div>
+		</div>
+		
+	<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"https:\/\/twentworth12.github.io\/2016\/02\/18\/some-practical-advice-for-aspiring-tech-cmos-c4f2a69a09f2\/":15};
+	</script>
+				<link rel="stylesheet" id="wp-block-heading-css" href="https://twentworth12.github.io/wp-content/plugins/gutenberg/build/block-library/blocks/heading/style.css" media="all">
+<link rel="stylesheet" id="jetpack-block-subscriptions-css" href="https://twentworth12.github.io/wp-content/plugins/jetpack/_inc/blocks/subscriptions/view.css" media="all">
+<script defer src="https://twentworth12.github.io/wp-content/plugins/akismet/_inc/akismet-frontend.js" id="akismet-frontend-js"></script>
+<script src="https://twentworth12.github.io/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-image-cdn/dist/image-cdn.js" id="jetpack-photon-js"></script>
+<script id="wp-block-template-skip-link-js-after">
+	( function() {
+		var skipLinkTarget = document.querySelector( 'main' ),
+			sibling,
+			skipLinkTargetID,
+			skipLink;
+
+		// Early exit if a skip-link target can't be located.
+		if ( ! skipLinkTarget ) {
+			return;
+		}
+
+		/*
+		 * Get the site wrapper.
+		 * The skip-link will be injected in the beginning of it.
+		 */
+		sibling = document.querySelector( '.wp-site-blocks' );
+
+		// Early exit if the root element was not found.
+		if ( ! sibling ) {
+			return;
+		}
+
+		// Get the skip-link target's ID, and generate one if it doesn't exist.
+		skipLinkTargetID = skipLinkTarget.id;
+		if ( ! skipLinkTargetID ) {
+			skipLinkTargetID = 'wp--skip-link--target';
+			skipLinkTarget.id = skipLinkTargetID;
+		}
+
+		// Create the skip link.
+		skipLink = document.createElement( 'a' );
+		skipLink.classList.add( 'skip-link', 'screen-reader-text' );
+		skipLink.href = '#' + skipLinkTargetID;
+		skipLink.innerHTML = 'Skip to content';
+
+		// Inject the skip link.
+		sibling.parentElement.insertBefore( skipLink, sibling );
+	}() );
+	
+</script>
+<script src="https://c0.wp.com/c/6.4.3/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js" id="wp-polyfill-inert-js"></script>
+<script src="https://c0.wp.com/c/6.4.3/wp-includes/js/dist/vendor/regenerator-runtime.min.js" id="regenerator-runtime-js"></script>
+<script src="https://c0.wp.com/c/6.4.3/wp-includes/js/dist/vendor/wp-polyfill.min.js" id="wp-polyfill-js"></script>
+<script src="https://twentworth12.github.io/wp-content/plugins/gutenberg/build/dom-ready/index.min.js" id="wp-dom-ready-js"></script>
+<script src="https://twentworth12.github.io/wp-content/plugins/jetpack/modules/comments/subscription-modal-on-comment/subscription-modal.js" id="subscription-modal-js-js"></script>
+<script src="https://twentworth12.github.io/wp-content/plugins/jetpack/_inc/build/likes/queuehandler.min.js" id="jetpack_likes_queuehandler-js"></script>
+<script src="https://secure.gravatar.com/js/gprofiles.js?ver=202410" id="grofiles-cards-js"></script>
+<script id="wpgroho-js-extra">
+var WPGroHo = {"my_hash":""};
+</script>
+<script src="https://twentworth12.github.io/wp-content/plugins/jetpack/modules/wpgroho.js" id="wpgroho-js"></script>
+<script src="https://stats.wp.com/e-202410.js" id="jetpack-stats-js" data-wp-strategy="defer"></script>
+<script id="jetpack-stats-js-after">
+_stq = window._stq || [];
+_stq.push([ "view", JSON.parse("{\"v\":\"ext\",\"blog\":\"156346229\",\"post\":\"15\",\"tz\":\"-4\",\"srv\":\"tomwentworth.com\",\"hp\":\"atomic\",\"ac\":\"2\",\"amp\":\"0\",\"j\":\"1:13.2-beta\"}") ]);
+_stq.push([ "clickTrackerInit", "156346229", "15" ]);
+</script>
+<script id="jetpack-blocks-assets-base-url-js-before">
+var Jetpack_Block_Assets_Base_Url="https://twentworth12.github.io/wp-content/plugins/jetpack/_inc/blocks/";
+</script>
+<script src="https://twentworth12.github.io/wp-content/plugins/jetpack/_inc/blocks/subscriptions/view.js" id="jetpack-block-subscriptions-js"></script>
+<script id="sharing-js-js-extra">
+var sharing_js_options = {"lang":"en","counts":"1","is_stats_active":"1"};
+</script>
+<script src="https://twentworth12.github.io/wp-content/plugins/jetpack/_inc/build/sharedaddy/sharing.min.js" id="sharing-js-js"></script>
+<script id="sharing-js-js-after">
+var windowOpen;
+			( function () {
+				function matches( el, sel ) {
+					return !! (
+						el.matches && el.matches( sel ) ||
+						el.msMatchesSelector && el.msMatchesSelector( sel )
+					);
+				}
+
+				document.body.addEventListener( 'click', function ( event ) {
+					if ( ! event.target ) {
+						return;
+					}
+
+					var el;
+					if ( matches( event.target, 'a.share-twitter' ) ) {
+						el = event.target;
+					} else if ( event.target.parentNode && matches( event.target.parentNode, 'a.share-twitter' ) ) {
+						el = event.target.parentNode;
+					}
+
+					if ( el ) {
+						event.preventDefault();
+
+						// If there's another sharing window open, close it.
+						if ( typeof windowOpen !== 'undefined' ) {
+							windowOpen.close();
+						}
+						windowOpen = window.open( el.getAttribute( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+						return false;
+					}
+				} );
+			} )();
+var windowOpen;
+			( function () {
+				function matches( el, sel ) {
+					return !! (
+						el.matches && el.matches( sel ) ||
+						el.msMatchesSelector && el.msMatchesSelector( sel )
+					);
+				}
+
+				document.body.addEventListener( 'click', function ( event ) {
+					if ( ! event.target ) {
+						return;
+					}
+
+					var el;
+					if ( matches( event.target, 'a.share-facebook' ) ) {
+						el = event.target;
+					} else if ( event.target.parentNode && matches( event.target.parentNode, 'a.share-facebook' ) ) {
+						el = event.target.parentNode;
+					}
+
+					if ( el ) {
+						event.preventDefault();
+
+						// If there's another sharing window open, close it.
+						if ( typeof windowOpen !== 'undefined' ) {
+							windowOpen.close();
+						}
+						windowOpen = window.open( el.getAttribute( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+						return false;
+					}
+				} );
+			} )();
+var windowOpen;
+			( function () {
+				function matches( el, sel ) {
+					return !! (
+						el.matches && el.matches( sel ) ||
+						el.msMatchesSelector && el.msMatchesSelector( sel )
+					);
+				}
+
+				document.body.addEventListener( 'click', function ( event ) {
+					if ( ! event.target ) {
+						return;
+					}
+
+					var el;
+					if ( matches( event.target, 'a.share-linkedin' ) ) {
+						el = event.target;
+					} else if ( event.target.parentNode && matches( event.target.parentNode, 'a.share-linkedin' ) ) {
+						el = event.target.parentNode;
+					}
+
+					if ( el ) {
+						event.preventDefault();
+
+						// If there's another sharing window open, close it.
+						if ( typeof windowOpen !== 'undefined' ) {
+							windowOpen.close();
+						}
+						windowOpen = window.open( el.getAttribute( 'href' ), 'wpcomlinkedin', 'menubar=1,resizable=1,width=580,height=450' );
+						return false;
+					}
+				} );
+			} )();
+</script>
+	<iframe src="https://widgets.wp.com/likes/master.html?ver=20240310#ver=20240310&n=1" scrolling="no" id="likes-master" name="likes-master" style="display:none;"></iframe>
+	<div id="likes-other-gravatars" class="wpl-new-layout" role="dialog" aria-hidden="true" tabindex="-1"><div class="likes-text"><span>%d</span></div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+			<script type="text/javascript">
+			(function () {
+				const iframe = document.getElementById( 'jetpack_remote_comment' );
+								const watchReply = function() {
+					// Check addComment._Jetpack_moveForm to make sure we don't monkey-patch twice.
+					if ( 'undefined' !== typeof addComment && ! addComment._Jetpack_moveForm ) {
+						// Cache the Core function.
+						addComment._Jetpack_moveForm = addComment.moveForm;
+						const commentParent = document.getElementById( 'comment_parent' );
+						const cancel = document.getElementById( 'cancel-comment-reply-link' );
+
+						function tellFrameNewParent ( commentParentValue ) {
+							const url = new URL( iframe.src );
+							if ( commentParentValue ) {
+								url.searchParams.set( 'replytocom', commentParentValue )
+							} else {
+								url.searchParams.delete( 'replytocom' );
+							}
+							if( iframe.src !== url.href ) {
+								iframe.src = url.href;
+							}
+						};
+
+						cancel.addEventListener( 'click', function () {
+							tellFrameNewParent( false );
+						} );
+
+						addComment.moveForm = function ( _, parentId ) {
+							tellFrameNewParent( parentId );
+							return addComment._Jetpack_moveForm.apply( null, arguments );
+						};
+					}
+				}
+				document.addEventListener( 'DOMContentLoaded', watchReply );
+				// In WP 6.4+, the script is loaded asynchronously, so we need to wait for it to load before we monkey-patch the functions it introduces.
+				document.querySelector('#comment-reply-js')?.addEventListener( 'load', watchReply );
+
+				
+				window.addEventListener( 'message', function ( event ) {
+					if ( event.origin !== 'https://jetpack.wordpress.com' ) {
+						return;
+					}
+					iframe.style.height = event.data + 'px';
+				});
+			})();
+		</script>
+		</body>
+</html>
