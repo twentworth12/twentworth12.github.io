@@ -1,0 +1,67 @@
+---
+layout: post
+title: "Lessons Learned Shifting to Product Qualified Leads"
+date: 2017-06-27 14:14:19 +0000
+categories:
+  - "Uncategorized"
+---
+### The Death of the Marketing Qualified Lead?
+
+A little over a year ago I <a href="https://tomwentworthcom.wordpress.com/why-im-killing-the-marketing-qualified-lead-95c90874bc6f" target="_blank" rel="noopener">wrote an article about killing the marketing qualified lead</a>. Here’s a quick refresher: Once upon a time, sales and marketing **hated each other**. Sales complained about never having enough leads, and marketing complained that sales were terrible at following up and converting them. It was the dark age of marketing. Enter marketing automation systems, and the birth of the “Marketing Qualified Lead (MQL)”. The MQL forced the alignment CEOs were looking for, requiring sales and marketing to agree on the traits and actions that described a good lead. It required a good content strategy to guide prospects through the complex B2B buying journey. It drove a consistent set of lead management processes that made it easy to measure conversions at key points. It let marketing prove contribution to revenue. All of that sounds great, so why kill the MQL? Marketing automation products made it easy — **maybe too easy** — to automate processes that would nurture users over time until they became “qualfied” by whatever lead scoring mechanism was put in place, usually by relentlessly emailing users and/or getting them to complete a form(s). But how qualified is someone just because they filled out a form or opened a few emails? <a href="https://medium.com/u/52d45a2865c1" target="_blank" rel="noopener">David Cancel</a> of Drift captures the <a href="http://www.slideshare.net/DrifttHQ/why-half-of-you-will-go-out-of-business" target="_blank" rel="noopener">issue</a>:
+
+<figure class="wp-caption">
+<img src="/assets/uploads/2017/06/5dbba-1tfMDuEztePjf9QtPJnjfeQ.png" data-width="634" data-height="382" />
+<figcaption><a href="http://www.priceintelligently.com/blog/david-cancel-saas-companies-customer-first-business-growth" target="_blank" rel="noopener">http://www.priceintelligently.com/blog/david-cancel-saas-companies-customer-first-business-growth</a></figcaption>
+</figure>
+
+The MQL and the associated sales and marketing processes around it simply didn’t reflect the modern reality of the empowered buyer. And because marketing teams were goaled on hitting an MQL target, we figured out how to game the system. Most lead scoring models overweight activity, so send enough nurturing emails or run enough webinars and you’ll MQL *everyone*. Ultimately the *hit the MQL goal at all cost* mentallity drove marketers to prioritize hitting short term monthly goals over building the type of sustainable brand magnet that creates demand over years and decades. Hitting the MQL goal became a speadsheet exercize: simply find a low cost acqusition channel and nurture the heck out of leads until they relent errr “qualify”. Even Account Based Marketing — the darling of everyone’s 2017 marketing budget — doesn’t deviate much from the traditional SaaS 1.0 playbook. It’s certainly a more effective way to reach the people most likely to buy your products, but when you dig into most ABM programs, they are still based on the tried-and-true tactics illustrated by <a href="https://medium.com/u/52d45a2865c1" target="_blank" rel="noopener">David Cancel</a> in the image above.
+
+#### Enter the Product Qualified Lead
+
+In August 2016, RapidMiner transitioned away from MQLs. I had just read <a href="https://expand.openviewpartners.com/what-is-a-pql-3d724548ba06" target="_blank" rel="noopener">Why Product Qualified Leads are the Answer to a Failing Freemium Model</a> from <a href="https://medium.com/u/80aa4106cc1e" target="_blank" rel="noopener">Christopher ODonnell</a> and it seemed like a perfect fit for us. RapidMiner has a huge user funnel due to strong brand among data scientists, combined with a freemium / open source distribution model. RapidMiner Studio is an open source data science platform, with commercial versions that add access to additional data and unlock faster performance. We define a PQL as someone who becomes a user of our flagship <a href="https://rapidminer.com/products/studio/" target="_blank" rel="noopener">RapidMiner Studio</a> product by downloading, confirming their free account, and using it in a way that tells us they have seen value. We built a predictive model (using RapidMiner, of course) to do the last part.
+
+### Here’s What I Learned About Killing the MQL
+
+In the rest of this post, I’ll share six lessons we’ve learned 12 months into our PQL journey:
+
+#### Lesson \#1: Forget sales and marketing alignment. It starts and ends with product.
+
+“We sold *what* to **whom**?” Remember <a href="https://en.wikipedia.org/wiki/Chinese_whispers" target="_blank" rel="noopener">the telephone game</a> — where you whisper a story to a group of people one person at a time to see how much it changed at the end? A similar phenominon happens in an MQL-dominated pipeline, where the leads you create and opportunities you create from them often look vastly different from the users you build products for. That’s because the “sales and marketing” alignment renaissance triggered by the MQL was actually the wrong goal. We forgot about aligning around product. The PQL shift at RapidMiner immediately aligned the entire company with product at the core. I get this sounds obvious, but for most companies the sales and marketing tail still wags the product dog. We’re now very clearly product led at RapidMiner, completely aligned around the core personas we serve. The best part is that it’s now much easier for me to make growth a more important part of the product backlog, and we’ve implemented a series of new product-led initiatives to help increase user acqusition and retention.
+
+#### Lesson \#2: You need a product oriented sales team.
+
+When RapidMiner shifted to PQLs in August 2016, we took a hard line: we only assigned PQLs and “hand raisers” (people who ask us to follow up with them) to our inside sales team. We took almost every form off of our site, and we stopped passing event leads to sales. A year later, we’re still only passing PQLs to sales. By focusing only on PQLs, the quality of our sales conversations improved. Our target buyer is most often a data scientist — not exactly the easiest persona to qualify. So we put our sales team through extensive product training, supplemented by sales engineers and other internal data science resources. While the PQL model didn’t eliminate the need for technical pre-sales resources, it did change the conversion from selling features (“can RapidMiner do this”) to delivering value (“can you help me create a customer churn model”). By the way, here’s a great article from <a href="https://medium.com/u/49600bc77127" target="_blank" rel="noopener">Auren Hoffman</a> on the differences <a href="https://www.quora.com/What-makes-a-great-salesperson-for-software-as-a-service-SaaS" target="_blank" rel="noopener">between relationship and product oriented</a> teams.
+
+#### **Lesson \#3: Selling is helping**
+
+We designed our PQL sales process with the expectation that users would want to engage directly with our inside sales team before buying. While we do a few self service transactions each month, most customers engage directly with our sales team. And that’s because users view us as trusted advisors, not transactional sales people. We’re helpful. Getting someone to respond to an email or a phone call — even an active product user — is still difficult for all the obvious reasons…(looking at you, spammy nurturing MQL email senders). Here’s the approach that works for us. Our email / phone calls go something like this:
+
+> Hey there, thanks for trying out RapidMiner. Please use me as a resource as you learn RapidMiner, and don’t hesitate to reach out if you need help.
+
+The key learning for us was that our inside sales team needed to be able to offer something of significant value the user couldn’t get elsewhere — help, with a personal touch. Which brings me to the next lesson.
+
+#### Lesson \#4: How to scale helpfulness
+
+We’ve made it a company goal to put our users first, even the ones who will never pay us. That’s easy to write on a PowerPoint slide, but it has serious implications when you have the type of scale we have at RapidMiner with tens of thousands of users each month. One of the ways we’ve scaled a culture of helping with a small team is <a href="https://hbr.org/2017/06/how-ai-is-streamlining-marketing-and-sales" target="_blank" rel="noopener">by using Drift</a>, a live chat platform. We get hundreds of questions a day from data scientists, and we try and answer every single one. Some questions we can answer right away, other times we direct users to the <a href="http://community.rapidminer.com" target="_blank" rel="noopener">RapidMiner Community</a>, where a user can get questions answered in a few hours. But everyone who comes to our chat and talks to us gets a response, it’s the least we can do. Through <a href="https://blog.drift.com/leadbot/" target="_blank" rel="noopener">a little bit of automation</a> and and tools, we’ve been able to scale helpfulness to thousands of users with just a couple of dedicated resources (shoutout to RapidMiner Community leader <a href="http://community.rapidminer.com/t5/user/viewprofilepage/user-id/7887" target="_blank" rel="noopener">Thomas Ott</a> and <a href="https://www.linkedin.com/in/yasmine-shammas-a13253127" target="_blank" rel="noopener">Yasmine</a>, our Northeastern co-op who runs Drift). We know that most of the people we help won’t buy our product — at least not right away — and that’s okay. By helping everyone, we are building a sustainable competitive advantage in the form of brand built on the back of a community. I’d like to think this is one of the reasons why RapidMiner is the <a href="http://www.kdnuggets.com/2017/05/poll-analytics-data-science-machine-learning-software-leaders.html/2" target="_blank" rel="noopener">most popular general data science platform on KDnuggets</a> and the highest rated product on both <a href="https://www.g2crowd.com/categories/predictive-analytics" target="_blank" rel="noopener">G2 Crowd</a> and <a href="https://www.gartner.com/reviews/market/advanced-analytics-platforms" target="_blank" rel="noopener">Gartner Peer Reviews</a>.
+
+#### Lesson \#5: Documentation is the new content marketing
+
+Moving to a PQL model required us to think differently about content. Since our top priority was to create active users, our content strategy needed to be focused on user on-boarding and education. Buzzfeed-y listicles and flashy infographics don’t provide much value to a data scientist looking to tune a gradient boosted tree. So we had to think differently about content. For example, instead of hiring a content marketer we reallocated budget to the product team to hire a documentation writer. Instead of creating lightweight infographics and eBooks, we create product tutorials and educational content. To measure the effectiveness of these efforts, we look closely at product survivial cohorts to measure the impact of specific actions to see how they impacted product survival over a period of time. Here’s an idea of what we look at (not our data…)
+
+<figure class="wp-caption">
+<img src="/assets/uploads/2017/06/403d5-1mc9W8cXIyugtKwArWEIkTA.png" data-width="1081" data-height="159" />
+<figcaption>Example of a Product Survival Cohorts</figcaption>
+</figure>
+
+#### Lesson \#6: Pricing and packaging has to scale with value
+
+Lastly, the key the success in a PQL model is that the user has to be able to clearly see the value in moving from free to paid versions. As anyone who works in open source will tell you, this is really hard to get right. In August of 2016, we launched new pricing and packaging to support our PQL model. We had previously based our pricing on access to specific features, for example, the ability to access an enterprise database like Oracle. But we heard from users that restricting features made it difficult for users to figure out if RapidMiner was the right tool for them, so we made two changes:
+
+1.  We included all features with the Free edition of RapidMiner Studio.
+2.  We simplified pricing to scale along two dimensions: the amount of data you can use, and the ability to speed up RapidMiner Studio by using more logical processors.
+
+This model let everyone use all of the features of RapidMiner Studio for free, and as users progressed from prototyping models to putitng them into production, the pricing step-ups made sense.
+
+### Bottom line: the PQL model works
+
+Twelve months into our PQL journey, we’ve seen some really great results. We doubled monthly active users even though we spend almost nothing on user acquisiton. We’ve lowered CAC, and increased LTV. Why? Because our funnel is full of users who have discovered they like RapidMiner well in advance of signing a deal with us, and often before they engage with us at all. **Build great products, help people use them.** (by the way, I really don’t hate the MQL; I just hate that the definition of qualified became so unscientific and drove bad behavior. <a href="https://tomwentworthcom.wordpress.com/stop-the-lead-scoring-madness-5f6b94e5859a" target="_blank" rel="noopener">More on that here</a>.)

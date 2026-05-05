@@ -1,0 +1,26 @@
+title: Tom Wentworth
+description: Advice on tech marketing strategy and tactics.
+url: https://tomwentworth.com
+
+permalink: /:year/:month/:day/:title/
+
+theme: minima
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+plugins:
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - tomwentworth.WordPress.2026-05-05.xml
+  - README.md
+  - .claude

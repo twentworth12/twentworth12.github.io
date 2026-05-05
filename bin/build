@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd "$(dirname "$0")/.."
+export PATH="/opt/homebrew/opt/ruby@3.3/bin:$PATH"
+exec bundle exec jekyll build "$@"
