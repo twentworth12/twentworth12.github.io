@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<section class="home-intro">
+  <h1>{{ site.title }}</h1>
+  <p class="tagline">{{ site.description }}</p>
+</section>
+
+<ul class="post-list">
+  {%- for post in site.posts -%}
+    {%- assign words = post.content | strip_html | number_of_words -%}
+    {%- assign minutes = words | divided_by: 200 | at_least: 1 -%}
+    <li>
+      <a class="post-row" href="{{ post.url | relative_url }}">
+        <span class="post-title">{{ post.title | escape }}</span>
+        <span class="post-meta">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+          <span class="dot">·</span>
+          <span>{{ minutes }} min read</span>
+        </span>
+        <span class="post-arrow" aria-hidden="true">&rarr;</span>
+      </a>
+    </li>
+  {%- endfor -%}
+</ul>

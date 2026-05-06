@@ -4,7 +4,8 @@ url: https://tomwentworth.com
 
 permalink: /:year/:month/:day/:title/
 
-theme: minima
+header_pages:
+  - about.md
 
 markdown: kramdown
 kramdown:
