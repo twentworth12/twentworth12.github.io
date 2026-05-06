@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Expert Session: GTM Programs &amp; Marketing ROI"
+title: "Expert Session: GTM Programs & Marketing ROI"
 date: 2024-08-08 13:05:16 +0000
 categories:
   - "Uncategorized"
