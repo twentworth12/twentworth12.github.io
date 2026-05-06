@@ -112,11 +112,12 @@ a:hover { color: var(--accent); }
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-areas:
-    "title arrow"
-    "meta  arrow";
-  align-items: center;
+    "title   arrow"
+    "meta    arrow"
+    "excerpt arrow";
+  align-items: start;
   gap: 4px 16px;
-  padding: 18px 0;
+  padding: 20px 0;
   transition: color 120ms ease;
 }
 .post-row .post-title {
@@ -133,12 +134,25 @@ a:hover { color: var(--accent); }
   gap: 8px;
   align-items: center;
 }
+.post-row .post-excerpt {
+  grid-area: excerpt;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.55;
+  margin-top: 6px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .post-row .post-arrow {
   grid-area: arrow;
   color: var(--muted);
   opacity: 0;
   transform: translateX(-4px);
   transition: opacity 120ms ease, transform 120ms ease, color 120ms ease;
+  align-self: center;
 }
 .post-row:hover .post-title { color: var(--accent); }
 .post-row:hover .post-arrow {

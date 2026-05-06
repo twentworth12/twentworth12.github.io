@@ -7,8 +7,6 @@ categories:
 ---
 <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;"><iframe src="https://www.loom.com/embed/ecaf982f2e5245cc8274d013f824daab" frameborder="0" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe></div>
 
-## 
-
 Let me be clear: no one asked for this. But I’m going to walk you through how I built and published an iOS app using Claude Code, Xcode, and pure vibes.
 
 I don’t know Swift. I’ve never written a real line of Swift in my life. But I’ve now shipped four apps to the App Store, mostly by telling AI what I wanted and watching it make the magic happen.
