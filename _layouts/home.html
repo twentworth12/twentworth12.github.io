@@ -3,11 +3,41 @@ layout: default
 ---
 <section class="home-intro">
   <h1>{{ site.title }}</h1>
-  <p class="tagline">{{ site.description }}</p>
+  <p class="tagline">CMO at incident.io, engineer-turned-marketer. Writing about building modern marketing teams and how AI is rewriting the playbook. My rule of thumb: <strong>Marketing Output = AI × Taste²</strong>.</p>
+  <nav class="home-social">
+    <a href="/about/">About</a>
+    <a href="https://www.linkedin.com/in/twentworth/" rel="me noopener" target="_blank">LinkedIn</a>
+    <a href="https://twitter.com/twentworth12" rel="me noopener" target="_blank">X</a>
+    <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+  </nav>
 </section>
 
+{%- comment -%} Featured post: first with `featured: true`, else the latest. {%- endcomment -%}
+{%- assign featured = site.posts | where: "featured", true | first -%}
+{%- unless featured -%}{%- assign featured = site.posts | first -%}{%- endunless -%}
+
+{%- if featured -%}
+  {%- assign f_words = featured.content | strip_html | number_of_words -%}
+  {%- assign f_minutes = f_words | divided_by: 200 | at_least: 1 -%}
+  <a class="post-featured" href="{{ featured.url | relative_url }}">
+    <p class="featured-kicker">Latest</p>
+    <span class="post-title">{{ featured.title | escape }}</span>
+    <span class="post-meta">
+      <time datetime="{{ featured.date | date_to_xmlschema }}">{{ featured.date | date: "%b %-d, %Y" }}</time>
+      <span class="dot">·</span>
+      <span>{{ f_minutes }} min read</span>
+    </span>
+    {%- assign f_excerpt = featured.content | strip_html | strip_newlines | replace: '  ', ' ' | truncatewords: 40 | strip -%}
+    {%- if f_excerpt != "" -%}
+      <span class="post-excerpt">{{ f_excerpt }}</span>
+    {%- endif -%}
+  </a>
+{%- endif -%}
+
+<p class="section-label">Writing</p>
 <ul class="post-list">
   {%- for post in site.posts -%}
+    {%- if post.url == featured.url -%}{%- continue -%}{%- endif -%}
     {%- assign words = post.content | strip_html | number_of_words -%}
     {%- assign minutes = words | divided_by: 200 | at_least: 1 -%}
     <li>

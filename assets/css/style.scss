@@ -2,18 +2,35 @@
 ---
 /* ---------- design tokens ---------- */
 :root {
-  --bg: #ffffff;
-  --fg: #0a0a0a;
-  --muted: #6b7280;
-  --hairline: #e5e7eb;
-  --accent: #2563eb;
-  --code-bg: #f5f5f5;
+  --bg: #fbfbf9;          /* warm paper, not pure white */
+  --bg-raised: #ffffff;   /* cards sit slightly brighter than paper */
+  --fg: #171614;          /* warm near-black ink */
+  --muted: #6b6a66;       /* warm gray for meta/tagline/excerpts */
+  --hairline: #e7e5e0;    /* warm light border */
+  --accent: #5546ff;      /* signature indigo-violet */
+  --accent-soft: #efeeff; /* tinted wash for cards + hover */
+  --code-bg: #f3f2ee;
 
   --content-width: 680px;
   --pad: 24px;
+  --radius: 12px;
 
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-display: 'Fraunces', 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, 'Times New Roman', serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f0f0e;
+    --bg-raised: #171715;
+    --fg: #f2f0ea;
+    --muted: #9a978f;
+    --hairline: #2a2925;
+    --accent: #a99bff;
+    --accent-soft: #1c1a33;
+    --code-bg: #1a1a18;
+  }
 }
 
 /* ---------- reset ---------- */
@@ -55,7 +72,9 @@ a:hover { color: var(--accent); }
   gap: 16px;
 }
 .site-title {
+  font-family: var(--font-display);
   font-weight: 600;
+  font-size: 19px;
   letter-spacing: -0.01em;
 }
 .site-nav a {
@@ -80,23 +99,104 @@ a:hover { color: var(--accent); }
 .site-footer a:hover { color: var(--fg); }
 .dot { color: var(--hairline); }
 
-/* ---------- home ---------- */
+/* ---------- home hero ---------- */
 .home-intro {
-  padding-bottom: 8px;
-  margin-bottom: 24px;
+  padding: 8px 0 28px;
+  margin-bottom: 8px;
 }
 .home-intro h1 {
-  font-size: 32px;
-  font-weight: 700;
+  font-family: var(--font-display);
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 1.05;
   letter-spacing: -0.02em;
-  margin: 0 0 8px;
+  margin: 0 0 12px;
 }
 .home-intro .tagline {
   color: var(--muted);
-  font-size: 17px;
+  font-size: 18px;
+  line-height: 1.55;
+  margin: 0 0 20px;
+  max-width: 40ch;
+}
+.home-intro .tagline strong { color: var(--fg); font-weight: 600; }
+
+.home-social {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 14px;
+  font-size: 15px;
+}
+.home-social a {
+  color: var(--muted);
+  border-bottom: 1px solid transparent;
+  padding-bottom: 1px;
+  transition: color 120ms ease, border-color 120ms ease;
+}
+.home-social a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+/* ---------- section label ---------- */
+.section-label {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 8px 0 4px;
+}
+
+/* ---------- featured post ---------- */
+.post-featured {
+  display: block;
+  background: var(--accent-soft);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius);
+  padding: 24px 26px;
+  margin: 16px 0 28px;
+  transition: border-color 140ms ease, transform 140ms ease;
+}
+.post-featured:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+.post-featured .featured-kicker {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 10px;
+}
+.post-featured .post-title {
+  font-family: var(--font-display);
+  font-size: 27px;
+  line-height: 1.15;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  margin: 0 0 10px;
+  color: var(--fg);
+}
+.post-featured:hover .post-title { color: var(--accent); }
+.post-featured .post-meta {
+  color: var(--muted);
+  font-size: 14px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin: 0 0 10px;
+}
+.post-featured .post-excerpt {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.6;
   margin: 0;
 }
 
+/* ---------- post list ---------- */
 .post-list {
   list-style: none;
   margin: 0;
@@ -117,8 +217,10 @@ a:hover { color: var(--accent); }
     "excerpt arrow";
   align-items: start;
   gap: 4px 16px;
-  padding: 20px 0;
-  transition: color 120ms ease;
+  padding: 20px;
+  margin: 0 -20px;
+  border-radius: 10px;
+  transition: background-color 140ms ease, color 120ms ease;
 }
 .post-row .post-title {
   grid-area: title;
@@ -154,6 +256,9 @@ a:hover { color: var(--accent); }
   transition: opacity 120ms ease, transform 120ms ease, color 120ms ease;
   align-self: center;
 }
+.post-row:hover {
+  background: var(--accent-soft);
+}
 .post-row:hover .post-title { color: var(--accent); }
 .post-row:hover .post-arrow {
   opacity: 1;
@@ -166,10 +271,11 @@ a:hover { color: var(--accent); }
   margin-bottom: 32px;
 }
 .post-title {
-  font-size: 36px;
-  line-height: 1.15;
-  font-weight: 700;
-  letter-spacing: -0.025em;
+  font-family: var(--font-display);
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: -0.02em;
   margin: 0 0 12px;
 }
 .post-meta {
@@ -212,7 +318,7 @@ a:hover { color: var(--accent); }
 .prose a {
   color: var(--accent);
   text-decoration: underline;
-  text-decoration-color: rgba(37, 99, 235, 0.3);
+  text-decoration-color: color-mix(in srgb, var(--accent) 35%, transparent);
   text-underline-offset: 3px;
 }
 .prose a:hover { text-decoration-color: var(--accent); }
@@ -221,7 +327,7 @@ a:hover { color: var(--accent); }
 .prose ol { padding-left: 1.4em; margin: 0 0 1.1em; }
 .prose li + li { margin-top: 0.4em; }
 .prose blockquote {
-  border-left: 3px solid var(--hairline);
+  border-left: 3px solid var(--accent);
   padding-left: 16px;
   color: var(--muted);
   font-style: italic;
@@ -272,8 +378,11 @@ a:hover { color: var(--accent); }
 /* ---------- mobile ---------- */
 @media (max-width: 640px) {
   body { font-size: 16px; }
-  .post-title { font-size: 28px; }
-  .home-intro h1 { font-size: 26px; }
+  .post-title { font-size: 30px; }
+  .home-intro h1 { font-size: 34px; }
+  .home-intro .tagline { font-size: 16px; }
   .page { padding: 32px 0 56px; }
-  .post-row { padding: 16px 0; }
+  .post-featured { padding: 20px; }
+  .post-featured .post-title { font-size: 23px; }
+  .post-row { padding: 16px; margin: 0 -16px; }
 }
