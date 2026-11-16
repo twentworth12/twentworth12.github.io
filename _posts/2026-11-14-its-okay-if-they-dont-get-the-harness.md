@@ -11,13 +11,13 @@ I felt a bit vindicated because just 20 minutes before that change, we'd been di
 
 Maybe. But that's okay.
 
-HubSpot is desperate to move beyond its marketing automation / CRM roots. It has to stay ahead of all the innovation that's happening because of agents + APIs + "headless" GTM. The marketing automation and CRM line still describes where they came from. It doesn't describe the agents, APIs, and "headless" GTM they have to stay ahead of.
+HubSpot is desperate to move beyond its marketing automation / CRM roots. It has to, to stay ahead of all the innovation that's happening because of agents + APIs + "headless" GTM.
 
-And the same applies to us. We have to make sure engineering leaders know that we're more than the best response platform with on-call that doesn't feel archaic. We've evolved into a full reliability platform with agents that solve the hard part of reliability work for you, like investigating an incident and finding the likely cause. The response platform part is still real. It just isn't the whole product anymore. If we don't say that, engineering leaders still think we're an on-call company.
+And the same applies to us. We have to make sure engineering leaders know that we're more than the best response platform with on-call that doesn't feel archaic. We've evolved into a full reliability platform with agents that solve the hard part of reliability work for you, like investigating an incident and finding the likely cause.
 
-Iterative positioning changes aren't big enough given the clear step change of AI. You can clean up the old message and still be talking about the old product.
+Iterative positioning changes aren't big enough given the clear step change of AI.
 
-So it's okay if not everyone immediately understands the "harness" context when they visit the HubSpot website or see incident.io at a conference. We want people to ask us "so what do you do?" because that's the only way they are going to really understand how we've evolved. If the line is too familiar, nobody asks, and they leave with the old version of us.
+So it's okay if not everyone immediately understands the "harness" context when they visit the HubSpot website or see incident.io at a conference. We want people to ask us "so what do you do?" because that's the only way they are going to really understand how we've evolved.
 
 And let's face it, no matter what messaging you put on a conference booth, 90% of the audience is still going to ask "so what do you do" 🤣
 
